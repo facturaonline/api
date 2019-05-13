@@ -16,9 +16,13 @@ Con el Api de Factura.com podrás:
 
 #### Importante
 
-Antes  poder timbrar cualquier documento es necesario agregar tus archivos fiscales y completar tu registro. Para hacerlo dirígete a la opción \n\n**Menú** - **Configuraciones** -  **Detalles de tu empresa**, \n\nuna vez que estés dentro de esta sección deberás agregar los siguientes elementos:\n\n* Logo de la compañía \n* Archivo .cer \n*  Archivo .key\n* Contraseña CSD.
+Antes  poder timbrar cualquier documento es necesario agregar tus archivos fiscales y completar tu registro. Para hacerlo dirígete a la opción **Menú - Configuraciones - Detalles de tu empresa**, una vez que estés dentro de esta sección deberás agregar los siguientes elementos:
+* Logo de la compañía.
+* Archivo .cer.
+* Archivo .key.
+* Contraseña CSD.
 
 
 #### Recuerda
 
-Antes de crear un CFDI es importante   **crear el cliente** al que se le emitirá la misma. \nPara hacerlo por favor consulta la sección correspondiente en esta documentación.
+Antes de crear un CFDI es importante **crear el cliente** al que se le emitirá la misma. Para hacerlo por favor consulta la sección correspondiente en esta documentación.
