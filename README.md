@@ -5,7 +5,7 @@ La documentación de la API de Facturaonline.com.mx ofrece una descripción de l
 #### Documentación
 [Información general](https://github.com/facturaonline/api/blob/master/Documentacion/Informacion_general.md)  
 [Enviroment](https://github.com/facturaonline/api/blob/master/Documentacion/Enviroment.md)  
-[Primeros pasos](https://github.com/facturaonline/api/blob/master/Documentacion/Primeros%20pasos.md)  
+[Primeros pasos](https://github.com/facturaonline/api/blob/master/Documentacion/Primeros_pasos.md)  
 
 #### CFDI 3.3
 [Listar CFDI's](https://github.com/facturaonline/api/blob/master/CFDI_3-3/Listar%20CFDI-s.md)  
