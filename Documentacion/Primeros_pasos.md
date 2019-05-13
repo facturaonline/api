@@ -22,7 +22,10 @@ A continuación se muestra un ejemplo:
 
 ```"codes": [
     {  
-        "code": "    \"Content-Type: application/json\",\n    \"F-PLUGIN: \" . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',\n    \"F-Api-Key: \". JDJ5JDEwJGRuT1Y3cUM3WnJEMUNaaXRwVW5UUmVMS3RLUHhHMjlYZndaeWxyRXVpUjBLVmwxOHBPWFXX,\n    \"F-Secret-Key: \" . JDJ5JDEwJDZaTjRhWDVVRXh3ejZIRmxEU1pjeE9GMVRHakh4OGY0MG5lRS5DclhISGFoeUFmaThxaUXX",
+        "code": "Content-Type: application/json\",
+        "F-PLUGIN": "9d4095c8f7ed5785cb14c0e3b033eeb8252416ed",
+        "F-Api-Key": "JDJ5JDEwJGRuT1Y3cUM3WnJEMUNaaXRwVW5UUmVMS3RLUHhHMjlYZndaeWxyRXVpUjBLVmwxOHBPWFXX",
+        "F-Secret-Key": "JDJ5JDEwJDZaTjRhWDVVRXh3ejZIRmxEU1pjeE9GMVRHakh4OGY0MG5lRS5DclhISGFoeUFmaThxaUXX",
         "language": "json",
         "name": "cabeceras.json"
     }
