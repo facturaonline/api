@@ -20,7 +20,8 @@ Es necesario incluir una cabecera  **F-PLUGIN** cuyo valor siempre será: **9d40
 
 A continuación se muestra un ejemplo:
 
-```"codes": [
+```
+"codes": [
     {  
         "code": "Content-Type: application/json\",
         "F-PLUGIN": "9d4095c8f7ed5785cb14c0e3b033eeb8252416ed",
