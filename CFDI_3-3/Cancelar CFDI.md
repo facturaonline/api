@@ -69,6 +69,8 @@ Además de reemplazar **cfdi_uid**  por el UID del CFDI que deseas cancelar.
 
 #### Respuesta
 
+```
+
 {
     "codes": [
         {
@@ -85,6 +87,8 @@ Además de reemplazar **cfdi_uid**  por el UID del CFDI que deseas cancelar.
         }
     ]
 }
+
+```
 
 
 #### Sobre errores
