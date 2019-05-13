@@ -4,7 +4,7 @@ Esta documentación explica como consultar, timbrar y cancelar facturas desde el
 
 La documentación de la API de Facturaonline.com ofrece una descripción detallada de los métodos y endpoints (URLs o direcciones) disponibles con ejemplos de las posibles respuestas a obtener o enviar. Además podrás consultar información general que facilitará su uso.
 
-Con el Api de Factura.com podrás:
+Con el Api de Facturaonline.com.mx podrás:
 * Crear todo tipo de CFDI.
 * Listar CFDIs.
 * Crear complemento de pagos.
