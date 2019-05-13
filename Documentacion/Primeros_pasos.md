@@ -20,7 +20,8 @@ Es necesario incluir una cabecera  **F-PLUGIN** cuyo valor siempre será: **9d40
 
 A continuación se muestra un ejemplo:
 
-```  
+```
+
 "codes": [
     {  
         "code": "Content-Type: application/json\",
@@ -31,4 +32,5 @@ A continuación se muestra un ejemplo:
         "name": "cabeceras.json"
     }
 ]
+
 ```
