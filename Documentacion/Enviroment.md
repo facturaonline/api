@@ -1,26 +1,20 @@
 # Enviroment
 
-El API de Facturaonline.com.mx cuenta con dos entornos disponibles:
-
-#### Sandbox
-
-Es un entorno de pruebas que simula el funcionamiento de nuestra API en producción, generando CFDIs sin validez fiscal.
-
-Es necesario solicitar una cuenta para el entorno de desarrollo **sandbox** antes de comenzar a utilizarlo, para esto envía un correo a soporte@facturaonline.com.mx.
+El API de Facturaonline.com.mx cuenta con un entorno disponible:
 
 
 #### Producción
 
 Host:  **https://facturaonline.com.mx**
 
-Es el host para realizar el timbrado real, te recomendamos hacer pruebas en la versión **sandbox** primero, ya que los CFDIs generados en este entorno si tienen validez fiscal.
+Es el host para realizar el timbrado real, por lo tanto los CFDIs generados si tienen validez fiscal.
 
 
 #### Composición de la URL
 
 Independientemente del entorno en el que estés trabajando, la estructura de la url se compone de la siguiente forma:
 
-* **Host** = sandbox (http://devfactura.in) o producción (https://facturaonline.com.mx)
+* **Host** = producción (https://facturaonline.com.mx)
 * **Version** = Versión de la API = api/v1 ó api/v3
 * **End_point** = Describe el método al que se está haciendo la petición.
 
