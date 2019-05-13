@@ -7,7 +7,7 @@ El API de Facturaonline.com.mx cuenta con un entorno disponible:
 
 Host:  **https://facturaonline.com.mx**
 
-Es el host para realizar el timbrado real, te recomendamos hacer pruebas en la versión **sandbox** primero, ya que los CFDIs generados en este entorno si tienen validez fiscal.
+Es el host para realizar el timbrado real, por lo tanto los CFDIs generados si tienen validez fiscal.
 
 
 #### Composición de la URL
