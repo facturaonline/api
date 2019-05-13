@@ -34,9 +34,9 @@ Podemos descargar un CFDI haciendo uso del siguiente parámetro:
 
 #### Construcción de la URL
 
-**Host**: (https://facturaonline.com.mx)
-**Endpoint PDF**:  /api/v3/cfdi33/cfdi_uid/pdf
-**Endpoint XML**:  /api/v3/cfdi33/cfdi_uid/xml
+**Host**: (https://facturaonline.com.mx)  
+**Endpoint PDF**:  /api/v3/cfdi33/cfdi_uid/pdf  
+**Endpoint XML**:  /api/v3/cfdi33/cfdi_uid/xml  
 **Ejemplo**:  (https://facturaonline.com.mx/api/v3/cfdi33/55c0fdc67593d/pdf)
 
 
