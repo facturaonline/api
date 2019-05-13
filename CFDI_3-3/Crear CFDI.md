@@ -15,7 +15,7 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
         "0-1": "array",
         "0-2": "Requerido",
         "0-3": "Indica el UID del receptor/cliente previamente creado en facturaonline.com.mx.
-        [Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/receptor).
+        Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/receptor.
         **Ejemplo**:   "Receptor": {
             "ResidenciaFiscal": "",
             "UID": "55c0fdc67593d"
@@ -24,13 +24,13 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
         "1-1": "string",
         "1-2": "Requerido",
         "1-3": "Indica la clave del tipo de documento que deseas timbrar.
-        [Ver listado de tipos de documentos.](https://facturaonline.com.mx/v3.0/docs/cat%C3%A1logos).
+        Ver listado de tipos de documentos. https://facturaonline.com.mx/v3.0/docs/cat%C3%A1logos.
         **Ejemplo**: "TipoCfdi": "factura",
         "2-0": "Conceptos",
         "2-1": "array",
         "2-2": "Requerido",
         "2-3": "Es un arreglo de objetos, en el que cada objeto corresponde a un concepto con sus atibutos para agregar al CFDI.
-        [Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/conceptos).
+        Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/conceptos.
         **Ejemplo**: "Conceptos": [{
             "ClaveProdServ": "43232408",
             "NoIdentificacion": "0021",
@@ -57,7 +57,7 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
         "3-1": "string",
         "3-2": "Requerido",
         "3-3": "Indica la clave del Uso de CFDI, ésta debe ser válida para el SAT.
-        [Ver catálogo de claves de **uso de cfdi**.](https://facturaonline.com.mx/docs/uso-de-cfdi).
+        Ver catálogo de claves de uso de cfdi. https://facturaonline.com.mx/docs/uso-de-cfdi.
         **Ejemplo**: "UsoCFDI": "G01",
         "4-0": "Serie",
         "4-1": "number",
@@ -68,13 +68,13 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
         "5-1": "string",
         "5-2": "Requerido",
         "5-3": "Indica la clave de la forma de pago.
-        [Ésta puedes consultarla en el  **Catálogo de formas de pago**](https://facturaonline.com.mx/docs/forma-de-pago).
+        Ésta puedes consultarla en el catálogo de formas de pago. https://facturaonline.com.mx/docs/forma-de-pago.
         **Ejemplo**: "FormaPago": "01",
         "6-0": "MetodoPago",
         "6-1": "string",
         "6-2": "Requerido",
         "6-3": "Indica la clave del método de pago.
-        [Ésta puedes consultarla en el  **Catálogo de métodos de pago**](https://facturaonline.com.mx/docs/m%C3%A9todos-de-pago).
+        Ésta puedes consultarla en el catálogo de métodos de pago. https://facturaonline.com.mx/docs/m%C3%A9todos-de-pago.
         **Ejemplo**:  "MetodoPago": "PUE",
         "7-0": "CondicionesDePago",
         "7-1": "string",
@@ -85,7 +85,7 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
         "8-1": "array",
         "8-2": "Opcional",
         "8-3": "En caso que tu CFDI vaya relacionado con otro(s), envía un arreglo con el/los UUID's con los que está relacionado.
-        [Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/cfdis-relacionados).
+        Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/cfdis-relacionados.
         **Ejemplo**: "CfdiRelacionados": {
             "TipoRelacion": "01",
             "UUID": [
@@ -97,7 +97,7 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
         "9-1": "string",
         "9-2": "Requerido",
         "9-3": "Indica la clave de la moneda del CFDI.
-        [Ésta puedes consultarla en el  **Catálogo de monedas**](https://facturaonline.com.mx/docs/moneda).
+        Ésta puedes consultarla en el catálogo de monedas. https://facturaonline.com.mx/docs/moneda.
         **Ejemplo:** "Moneda": "MXN",
         "10-0": "TipoCambio",
         "10-1": "string",
@@ -151,7 +151,7 @@ Es necesario que envíes los valores (precios, cálculo de impuestos, subtotales
 
 **Host**: https://facturaonline.com.mx
 **Endpoint**:  /api/v3/cfdi33/create
-**Ejemplo**:  https://factura.com/api/v3/cfdi33/create
+**Ejemplo**:  https://facturaonline.com.mx/api/v3/cfdi33/create
 
 
 #### Ejemplo
@@ -198,7 +198,7 @@ Es necesario que envíes los valores (precios, cálculo de impuestos, subtotales
         ];
 
         $jsonfield = json_encode($fields);
-        curl_setopt($ch, CURLOPT_URL, "http://devfactura.in/api/v3/cfdi33/create");
+        curl_setopt($ch, CURLOPT_URL, "http://facturaonline.con.mx/api/v3/cfdi33/create");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
         curl_setopt($ch, CURLOPT_POST, TRUE);
