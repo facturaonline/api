@@ -1,6 +1,6 @@
 # Enviar CFDI
 
-A continuación se explica como enviar un CFDI.
+A continuación se explica como enviar un CFDI.  
 Podemos enviar un CFDI haciendo uso del siguiente parámetro:
 
 ```
@@ -24,9 +24,9 @@ Podemos enviar un CFDI haciendo uso del siguiente parámetro:
 
 #### Construcción de la URL
 
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v3/cfdi33/cfdi_uid/email
-**Ejemplo**:  https://facturaonline.com.mx/api/v3/cfdi33/55c0fdc67593d/email
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v3/cfdi33/cfdi_uid/email  
+**Ejemplo**:  https://facturaonline.com.mx/api/v3/cfdi33/55c0fdc67593d/email  
 
 
 #### Ejemplo
@@ -57,5 +57,5 @@ Podemos enviar un CFDI haciendo uso del siguiente parámetro:
 
 #### Recuerda
 
-Para probar el código de ejemplo es necesario que reemplaces el texto  **Ingresa API KEY**  por el API KEY de tu cuenta, e **Ingresa SECRET KEY**  por el SECRET KEY correspondiente.
+Para probar el código de ejemplo es necesario que reemplaces el texto  **Ingresa API KEY**  por el API KEY de tu cuenta, e **Ingresa SECRET KEY**  por el SECRET KEY correspondiente.  
 Además de reemplazar **cfdi_uid**  por el UID del CFDI que deseas cancelar.
