@@ -1,4 +1,5 @@
-#Listar productos"
+# Listar productos
+
 A continuación se explica como listar los productos, con un ejemplo y muestra de posibles respuestas obtenidas.  
 Podemos consultar los productos que tenemos dados de alta, o filtrar por algunos parámetros:
 
