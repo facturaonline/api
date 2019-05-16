@@ -4,9 +4,9 @@ A continuación se explica como obtener los detalles de la empresa actual con la
 
 #### Construcción de la URL
 
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v1/current/account
-**Ejemplo**:  https://facturaonline.com.mx/api/v1/current/account
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v1/current/account  
+**Ejemplo**:  https://facturaonline.com.mx/api/v1/current/account  
 
 
 #### Ejemplo
