@@ -25,9 +25,9 @@ Para consultar un cliente en específico es necesario agregar el RFC.
 
 #### Construcción de la URL
 
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v1/clients/rfc
-**Ejemplo**:  https://facturaonline.com.mx/api/v1/clients/rfc
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v1/clients/rfc  
+**Ejemplo**:  https://facturaonline.com.mx/api/v1/clients/rfc  
 
 
 #### Ejemplo
