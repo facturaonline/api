@@ -17,7 +17,7 @@ Consulta el catálogo de impuestos.
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v3/catalogo/Impuesto");
+curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v3/catalogo/Impuesto");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
