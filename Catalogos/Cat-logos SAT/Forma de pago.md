@@ -1,7 +1,8 @@
----
-title: "Forma de pago"
-excerpt: "Consulta el catálogo de formas de pago"
----
+
+# Forma de pago"
+
+Consulta el catálogo de formas de pago"
+
 [block:html]
 {
   "html": "<div>\n  <h1>Construcción de la URL</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"

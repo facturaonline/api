@@ -1,7 +1,8 @@
----
-title: "Tasa o cuota"
-excerpt: "A continuación se muestran los porcentajes de impuestos aceptados por el SAT"
----
+
+# Tasa o cuota"
+
+A continuación se muestran los porcentajes de impuestos aceptados por el SAT"
+
 [block:html]
 {
   "html": "<div>\n  <h1>Catálogo de tasas o cuotas de impuestos</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"

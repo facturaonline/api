@@ -1,7 +1,8 @@
----
-title: "Tipo de relación"
-excerpt: "Consulta el catálogo de claves de tipo de relacion"
----
+
+# Tipo de relación"
+
+Consulta el catálogo de claves de tipo de relacion"
+
 [block:html]
 {
   "html": "<div>\n  <h1>Construcción de la URL</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"

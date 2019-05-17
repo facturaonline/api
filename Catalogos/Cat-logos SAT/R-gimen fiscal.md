@@ -1,7 +1,8 @@
----
-title: "Régimen fiscal"
-excerpt: "Consulta el catálogo de régimen fiscal"
----
+
+# Régimen fiscal"
+
+Consulta el catálogo de régimen fiscal"
+
 [block:html]
 {
   "html": "<div>\n  <h1>Construcción de la URL</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"
