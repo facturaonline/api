@@ -34,7 +34,7 @@ Consulta el catálogo de claves de uso de CFDI"
 {
   "type": "info",
   "title": "Recuerda",
-  "body": "Para probar el código de ejemplo es necesario que reemplaces el texto** Ingresa API KEY** por el **API KEY** de tu cuenta, e **Ingresa SECRET KEY** por el **SECRET KEY **correspondiente."
+  "body": "Para probar el código de ejemplo es necesario que reemplaces el texto** Ingresa API KEY** por el **API KEY** de tu cuenta, e **Ingresa SECRET KEY** por el **SECRET KEY** correspondiente."
 }
 [/block]
 
