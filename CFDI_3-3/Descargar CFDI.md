@@ -11,79 +11,69 @@ Para obtener uno u otro solo es necesario cambiar el endpoint al que estamos apu
 
 Podemos descargar un CFDI haciendo uso del siguiente parámetro:
 
-```
-
-{
-    "data": {
-        "h-0": "Parámetro",
-        "h-1": "Tipo",
-        "h-2": "Requerido",
-        "h-3": "Detalles",
-        "0-0": "cfdi_uid",
-        "0-1": "string",
-        "0-2": "Requerido",
-        "0-3": "Indica el UID o UUID del CFDI que deseas descargar.
-        **Ejemplo**: "n55c0fdc67593d"
-    },
-    "cols": 4,
-    "rows": 1
-}
-
-```
+<table>
+    <thead>
+        <tr>
+            <th>Parámetro</th>
+            <th>Tipo</th>
+            <th>Requerido</th>
+            <th>Detalles</th>
+        </tr>
+    <thead>
+    <tbody>
+        <tr>
+            <td>cfdi_uid"</td>
+            <td>string"</td>
+            <td>Requerido"</td>
+            <td>Indica el UID o UUID del CFDI que deseas descargar.
+            Ejemplo: "n55c0fdc67593d</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
 
 #### Construcción de la URL
 
-**Host**: (https://facturaonline.com.mx)  
+**Host**: https://facturaonline.com.mx  
 **Endpoint PDF**:  /api/v3/cfdi33/cfdi_uid/pdf  
 **Endpoint XML**:  /api/v3/cfdi33/cfdi_uid/xml  
-**Ejemplo**:  (https://facturaonline.com.mx/api/v3/cfdi33/55c0fdc67593d/pdf)
+**Ejemplo**:  https://facturaonline.com.mx/api/v3/cfdi33/55c0fdc67593d/pdf  
 
 
 #### Ejemplo
 
 ```
 
-{
-    "codes": [
-        {
-            "code": "<?php
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v3/cfdi33/cfdi_uid/pdf");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-                curl_setopt($ch, CURLOPT_HEADER, FALSE);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                "Content-Type: application/json",
-                "F-PLUGIN": "9d4095c8f7ed5785cb14c0e3b033eeb8252416ed",
-                "F-Api-Key": "Ingresa API KEY",
-                "F-Secret-Key": "Ingresa SECRET KEY"
-            ));
-            $response = curl_exec($ch);
-            curl_close($ch);
-            var_dump($response);",
-            "language": "php",
-            "name": "descarga_cfdi_pdf.php"
-        },
-        {
-            "code": "<?php
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v3/cfdi33/cfdi_uid/xml");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-            curl_setopt($ch, CURLOPT_HEADER, FALSE);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                "Content-Type": "application/json",
-                "F-PLUGIN": "9d4095c8f7ed5785cb14c0e3b033eeb8252416ed",
-                "F-Api-Key": "Ingresa API KEY",
-                "F-Secret-Key": "Ingresa SECRET KEY"
-            ));
-            $response = curl_exec($ch);
-            curl_close($ch);
-            var_dump($response);",
-            "language": "php",
-            "name": "descarga_cfdi_xml.php"
-        }
-    ]
-}
+<?php
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v3/cfdi33/cfdi_uid/pdf");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    "Content-Type: application/json",
+    "F-PLUGIN: " . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
+    "F-Api-Key: ". 'Ingresa API KEY',
+    "F-Secret-Key: " . 'Ingresa SECRET KEY'
+));
+
+$response = curl_exec($ch);
+curl_close($ch);
+
+var_dump($response);
 
 ```
 
