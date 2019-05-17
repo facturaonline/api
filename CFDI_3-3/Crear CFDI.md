@@ -181,9 +181,9 @@ Es necesario que envíes los valores (precios, cálculo de impuestos, subtotales
 
 #### Construcción de la URL
 
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v3/cfdi33/create
-**Ejemplo**:  https://facturaonline.com.mx/api/v3/cfdi33/create
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v3/cfdi33/create  
+**Ejemplo**:  https://facturaonline.com.mx/api/v3/cfdi33/create  
 
 
 #### Ejemplo
