@@ -127,7 +127,7 @@ Podemos crear un nuevo cliente haciendo uso de los siguientes parámetros:
             <td>string</td>
             <td>Requerido</td>
             <td>Indica la clave que corresponda al uso que le dará al comprobante fiscal el receptor.
-            [Consulta el catálogo de claves de Uso de CFDI.](https://facturaonline.com.mx/docs/uso-de-cfdi</td>
+            [Consulta el catálogo de claves de Uso de CFDI.](https://facturaonline.com.mx/docs/uso-de-cfdi)</td>
         </tr>
     </tbody>
 </table>
