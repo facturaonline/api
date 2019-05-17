@@ -5,9 +5,9 @@ Consulta el catálogo de impuestos.
 
 #### Construcción de la URL
 
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v3/catalogo/Impuesto
-**URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/Impuesto
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v3/catalogo/Impuesto  
+**URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/Impuesto  
 
 
 #### Ejemplo
