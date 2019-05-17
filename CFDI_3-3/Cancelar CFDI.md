@@ -26,9 +26,9 @@ Podemos cancelar un CFDI haciendo uso del siguiente parámetro:
 
 #### Construcción de la URL
 
-**Host**: (https://Facturaonline.com.mx)  
+**Host**: https://Facturaonline.com.mx  
 **Endpoint**:  /api/v3/cfdi33/cfdi_uid/cancel  
-**Ejemplo**:  (https://Facturaonline.com.mx/api/v3/cfdi33/55c0fdc67593d/cancel)  
+**Ejemplo**:  https://Facturaonline.com.mx/api/v3/cfdi33/55c0fdc67593d/cancel  
 
 
 #### Ejemplo

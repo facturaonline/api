@@ -107,8 +107,7 @@ Podemos actualizar los datos de un cliente haciendo uso de los siguientes parám
             <td>pais</td>
             <td>string</td>
             <td>Opcional</td>
-            <td>Indica la clave del país.
-            [Consulta el catálogo correspondiente a paises.](https://facturaonline.com.mx/docs/pa%C3%ADs)</td>
+            <td>Indica la clave del país.</td>
         </tr>
         <tr>
             <td>delegacion</td>
@@ -126,8 +125,7 @@ Podemos actualizar los datos de un cliente haciendo uso de los siguientes parám
             <td>usocfdi</td>
             <td>string</td>
             <td>Requerido</td>
-            <td>Indica la clave que corresponda al uso que le dará al comprobante fiscal el receptor.
-            [Consulta el catálogo de claves de Uso de CFDI.](https://facturaonline.com.mx/docs/uso-de-cfdi)</td>
+            <td>Indica la clave que corresponda al uso que le dará al comprobante fiscal el receptor.</td>
         </tr>
     </tbody>
 </table>

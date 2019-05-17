@@ -43,15 +43,13 @@ Podemos crear un nuevo producto haciendo uso de los siguientes parámetros:
             <td>unity</td>
             <td>string</td>
             <td>Requerido</td>
-            <td>Indica la unidad de medida, ésta debe corresponder a la clave indicada en el atributo claveUnity.
-            [Consulta el catálogo de Clave Unidad.](https://facturaonline.com.mx/docs/unidad)</td>
+            <td>Indica la unidad de medida, ésta debe corresponder a la clave indicada en el atributo claveUnity.</td>
         </tr>
         <tr>
             <td>claveUnity</td>
             <td>string</td>
             <td>Requerido</td>
-            <td>Indica la clave de la unidad de medida, ésta debe corresponder a la unidad indicada en el atributo unity.
-            [Consulta el catálogo de Clave Unidad.](https://facturaonline.com.mx/docs/unidad)</td>
+            <td>Indica la clave de la unidad de medida, ésta debe corresponder a la unidad indicada en el atributo unity.</td>
         </tr>
     </tbody>
 </table>

@@ -48,7 +48,6 @@ El nodo de Partes se conforma de los siguientes atributos:
             <td>string</td>
             <td>Requerido</td>
             <td>Indica la clave de la unidad  de medida correspondiente a tu concepto.
-            [Consulta el listado de claves válidas para el SAT.](https://facturaonline.com.mx/docs/unidad).
             Ejemplo:"ClaveUnidad": "E48"</td>
         </tr>
         <tr>
@@ -56,7 +55,6 @@ El nodo de Partes se conforma de los siguientes atributos:
             <td>string</td>
             <td>Requerido</td>
             <td>Indica la unidad de medida. Ésta debe coincidir con la clave de la unidad ingresada en el parámetro anterior.
-            [Consulta el listado de claves válidas para el SAT.](https://facturaonline.com.mx/docs/unidad).
             Ejemplo: "Unidad": "Unidad de servicio"</td>
         </tr>
         <tr>

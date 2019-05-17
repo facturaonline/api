@@ -21,7 +21,7 @@ El nodo de impuestos  se conforma de los siguientes atributos:
             <td>Traslados</td>
             <td>array</td>
             <td>Requerido  Es requerido siempre y cuando la factura lleve el tipo de impuesto Traslado.</td>
-            <td>Indica los impuestos trasladados que se aplican a tu concepto. [Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/impuestos#traslados-retenidos).
+            <td>Indica los impuestos trasladados que se aplican a tu concepto.
             Ejemplo: "Traslados": [
                 {
                     "Base": "15000.00",
@@ -36,7 +36,7 @@ El nodo de impuestos  se conforma de los siguientes atributos:
             <td>Retenidos</td>
             <td>array</td>
             <td>Requerido  Es requerido siempre y cuando la factura lleve el tipo de impuesto Retenciones.</td>
-            <td>Indica los impuestos retenidos que se aplican a tu concepto. [Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/impuestos#traslados-retenidos).
+            <td>Indica los impuestos retenidos que se aplican a tu concepto.
             Ejemplo: "Retenidos": [
                 {
                     "Base": "15000.00",
@@ -51,7 +51,7 @@ El nodo de impuestos  se conforma de los siguientes atributos:
             <td>Locales</td>
             <td>array</td>
             <td>Requerido  Es requerido siempre y cuando la factura lleve el tipo de impuesto Locales.</td>
-            <td>Indica los impuestos locales que se aplican a tu concepto. [Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/impuestos#locales).
+            <td>Indica los impuestos locales que se aplican a tu concepto.
             Ejemplo: "Locales": [
                 {
                     "Impuesto": "ISH",

@@ -17,8 +17,7 @@ Podemos crear un **CFDI con complemento de pago** haciendo uso de los siguientes
             <td>Receptor</td>
             <td>array</td>
             <td>Requerido</td>
-            <td>Indica el UID del receptor/cliente previamente creado en facturaonline.com.mx."
-            [Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/receptor)
+            <td>Indica el UID del receptor/cliente previamente creado en facturaonline.com.mx.
             Ejemplo: "Receptor": {
                 "ResidenciaFiscal": "",
                 "UID": "55c0fdc67593d"
@@ -66,7 +65,6 @@ Podemos crear un **CFDI con complemento de pago** haciendo uso de los siguientes
             <td>array</td>
             <td>Opcional</td>
             <td>En caso que tu complemento sustituya a otro envía un arreglo con el/los UUID's con los que está relacionado.
-            [Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/cfdis-relacionados-1)
             Ejemplo: "CfdiRelacionados": {
                 "TipoRelacion": "04",
                 "UUID": [
@@ -109,8 +107,7 @@ Podemos crear un **CFDI con complemento de pago** haciendo uso de los siguientes
             <td>Pagos</td>
             <td>Array</td>
             <td>Requerido</td>
-            <td>Indica los datos del complemento de pago.
-            [Ver lista de atributos requeridos para este nodo.](https://facturaonline.com.mx/docs/complemento-de-pago#pagos)</td>
+            <td>Indica los datos del complemento de pago.</td>
         </tr>
     </tbody>
 </table>
@@ -156,7 +153,6 @@ A continuación se presentan los atibutos que debe incluir el nodo **Pagos**:
             <td>array</td>
             <td>Requerido</td>
             <td>Indica la clave de la forma de pago.
-            [Ésta puedes consultarla en el  Catálogo de formas de pago. ](https://facturaonline.com.mx/docs/forma-de-pago)
             Nota: debe ser distinta a la clave 99 - Por definir.
             Ejemplo: "FormaPago": "01"</td>
         </tr>
@@ -165,7 +161,6 @@ A continuación se presentan los atibutos que debe incluir el nodo **Pagos**:
             <td>string</td>
             <td>Requerido</td>
             <td>Indica la clave de la moneda del pago.
-            [Ésta puedes consultarla en el  Catálogo de monedas](https://facturaonline.com.mx/docs/moneda)
             Ejemplo: "Moneda": "MXN"</td>
         </tr>
         <tr>
@@ -229,15 +224,13 @@ A continuación se presentan los atibutos que debe incluir el nodo **Pagos**:
             <td>TipoCadPago</td>
             <td>string</td>
             <td>Opcional</td>
-            <td>Indica la clave del tipo de cadena de pago.
-            [Consulta las claves correspondientes a Forma de pago válidas.](https://facturaonline.com.mx/docs/forma-de-pago)</td>
+            <td>Indica la clave del tipo de cadena de pago.</td>
         </tr>
         <tr>
             <td>relacionados</td>
             <td>string</td>
             <td>Opcional</td>
-            <td>Indica al menos un documento relacionado para tu complemento de pago.
-            [Revisa los atributos que debe llevar este nodo.](https://facturaonline.com.mx/docs/relacionados)</td>
+            <td>Indica al menos un documento relacionado para tu complemento de pago.</td>
         </tr>
     </tbody>
 </table>

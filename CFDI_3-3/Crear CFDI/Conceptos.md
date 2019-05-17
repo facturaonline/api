@@ -38,7 +38,6 @@ Para cada concepto es necesario incluir los siguientes atributos:
             <td>string</td>
             <td>Requerido</td>
             <td>Indica la clave de la unidad  de medida correspondiente a tu concepto.
-            [Consulta el listado de claves válidas para el SAT.](https://facturaonline.com.mx/docs/unidad)
             Ejemplo: "ClaveUnidad": "E48"</td>
         </tr>
         <tr>
@@ -46,7 +45,6 @@ Para cada concepto es necesario incluir los siguientes atributos:
             <td>string</td>
             <td>Requerido</td>
             <td>Indica la unidad de medida. Ésta debe coincidir con la clave de la unidad ingresada en el parámetro anterior.
-            [Consulta el listado de claves válidas para el SAT.](https://facturaonline.com.mx/docs/unidad)
             Ejemplo: "Unidad": "Unidad de servicio"</td>
         </tr>
         <tr>
@@ -75,7 +73,6 @@ Para cada concepto es necesario incluir los siguientes atributos:
             <td>array</td>
             <td>Opcional</td>
             <td>Indicar los impuestos (traslados, locales y retenidos) que tendrá el concepto.
-            [Consulta los parámetros que debe contener.](https://facturaonline.com.mx/docs/impuestos)
             Ejemplo: "Impuestos": {
                 "Traslados": [
                     {
@@ -108,8 +105,7 @@ Para cada concepto es necesario incluir los siguientes atributos:
             <td>Partes</td>
             <td>array</td>
             <td>Opcional</td>
-            <td>Indica las partes o componentes que integran la totalidad del concepto.
-            [Ver los atributos que puede contener](https://facturaonline.com.mx/docs/partes).</td>
+            <td>Indica las partes o componentes que integran la totalidad del concepto.</td>
         </tr>
     </tbody>
 </table>

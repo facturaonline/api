@@ -28,7 +28,6 @@ El nodo de CfdiRelacionados se conforma de los siguientes atributos:
             <td>string</td>
             <td>Requerido</td>
             <td>Indicar la clave del tipo de relación correspondiente.
-            [Revisar el listado de claves proporcionado por el SAT.](https://facturaonline.com.mx/docs/tipo-de-relaci%C3%B3n).
             Ejemplo:"TipoRelacion": "01"</td>
         </tr>
         <tr>
