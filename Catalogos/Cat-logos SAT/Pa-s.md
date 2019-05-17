@@ -1,57 +1,73 @@
+# País
 
-# País"
+Consulta el catálogo de paises.
 
-Consulta el catálogo de paises"
 
-[block:html]
+#### Construcción de la URL
+
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v3/catalogo/Pais  
+**URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/Pais  
+
+
+#### Ejemplo
+
+```
+
+<?php
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v3/catalogo/Pais");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+   "Content-Type: application/json",
+    "F-PLUGIN: " . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
+    "F-Api-Key: ". 'Ingresa API KEY',
+    "F-Secret-Key: " . 'Ingresa SECRET KEY'
+));
+
+$response = curl_exec($ch);
+
+curl_close($ch);
+
+var_dump($response);
+
+
+```
+
+
+#### Recuerda
+
+Para probar el código de ejemplo es necesario que reemplaces el texto** Ingresa API KEY** por el **API KEY** de tu cuenta, e **Ingresa SECRET KEY** por el **SECRET KEY** correspondiente.
+
+
+#### Respuesta
+
+```
+
 {
-  "html": "<div>\n  <h1>Construcción de la URL</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"
+    "response": "success",
+    "data": [
+        {
+            "key": "AFG",
+            "name": "Afganistán"
+        },
+        {
+            "key": "ALA",
+            "name": "Islas Åland"
+        },
+        {
+            "key": "ALB",
+            "name": "Albania"
+        },
+        {
+            "key": "DEU",
+            "name": "Alemania"
+        }
+        ...
+    ]
 }
-[/block]
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v3/catalogo/Pais
 
-**URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/Pais
-[block:html]
-{
-  "html": "<div>\n  <h1>Ejemplo</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"
-}
-[/block]
-
-[block:code]
-{
-  "codes": [
-    {
-      "code": "<?php\n$ch = curl_init();\n\ncurl_setopt($ch, CURLOPT_URL, \"https://facturaonline.com.mx/api/v3/catalogo/Pais\");\ncurl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);\ncurl_setopt($ch, CURLOPT_HEADER, FALSE);\n\ncurl_setopt($ch, CURLOPT_HTTPHEADER, array(\n   \"Content-Type: application/json\",\n    \"F-PLUGIN: \" . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',\n    \"F-Api-Key: \". 'Ingresa API KEY',\n    \"F-Secret-Key: \" . 'Ingresa SECRET KEY'\n));\n\n$response = curl_exec($ch);\ncurl_close($ch);\n\nvar_dump($response);\n",
-      "language": "php",
-      "name": "consulta_pais.php"
-    }
-  ]
-}
-[/block]
-
-[block:callout]
-{
-  "type": "info",
-  "title": "Recuerda",
-  "body": "Para probar el código de ejemplo es necesario que reemplaces el texto** Ingresa API KEY** por el **API KEY** de tu cuenta, e **Ingresa SECRET KEY** por el **SECRET KEY** correspondiente."
-}
-[/block]
-
-[block:html]
-{
-  "html": "<div>\n  <h1>Respuesta</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"
-}
-[/block]
-
-[block:code]
-{
-  "codes": [
-    {
-      "code": "{\n  \"response\": \"success\",\n  \"data\": [\n    {\n      \"key\": \"AFG\",\n      \"name\": \"Afganistán\"\n    },\n    {\n      \"key\": \"ALA\",\n      \"name\": \"Islas Åland\"\n    },\n    {\n      \"key\": \"ALB\",\n      \"name\": \"Albania\"\n    },\n    {\n      \"key\": \"DEU\",\n      \"name\": \"Alemania\"\n    }\n    .\n    .\n    .\n  ]\n}",
-      "language": "json",
-      "name": "Respuesta exitosa"
-    }
-  ]
-}
-[/block]
+```
