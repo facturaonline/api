@@ -30,7 +30,7 @@ Para actualizar la información de una empresa es necesario enviar los siguiente
             <td>string</td>
             <td>Opcional</td>
             <td>Indica el código del régimen fiscal al que pertenece tu empresa.
-            [Consulta las claves de Régimen fiscal válidas](https://developers.facturaonline.com.mx/docs/r%C3%A9gimen-fiscal).</td>
+            [Consulta las claves de Régimen fiscal válidas](https://facturaonline.com.mx/docs/r%C3%A9gimen-fiscal).</td>
         </tr>
         <tr>
             <td>calle</td>
