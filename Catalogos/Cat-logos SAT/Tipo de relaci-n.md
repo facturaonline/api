@@ -8,7 +8,7 @@ Consulta el catálogo de claves de tipo de relacion"
   "html": "<div>\n  <h1>Construcción de la URL</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"
 }
 [/block]
-**Host**: ** https://facturaonline.com.mx** (producción)     /    **http://facturaonline.com.mx** (sandbox)
+**Host**: https://facturaonline.com.mx
 **Endpoint**:  /api/v3/catalogo/Relacion
 
 **URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/Relacion
