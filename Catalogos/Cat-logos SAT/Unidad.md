@@ -5,9 +5,9 @@ Consulta el catálogo de Unidades de medida.
 
 #### Construcción de la URL
 
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v3/catalogo/ClaveUnidad
-**URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/ClaveUnidad
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v3/catalogo/ClaveUnidad  
+**URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/ClaveUnidad  
 
 
 #### Ejemplo
