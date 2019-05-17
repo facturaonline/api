@@ -17,8 +17,37 @@ Podemos consultar los CFDI's filtrando por los siguientes parámetros:
             <td>month</td>
             <td>number</td>
             <td>Opcional</td>
-            <td>Induca el número de mes que deseas consultar. Éste debe estar escrito en 2 dígitos.  
-            Ejemplo: Enero = 01, Diciembre = 12, etc.</td>
+            <td>Induca el número de mes que deseas consultar. Éste debe estar escrito en 2 dígitos. Ejemplo: Enero = 01, Diciembre = 12, etc.</td>
+        </tr>
+        <tr>
+            <td>year</td>
+            <td>number</td>
+            <td>Opcional</td>
+            <td>Indica el año que deseas consultar. Éste debe estar escrito en 4 dígitos. Ejemplo: 2017.</td>
+        </tr>
+        <tr>
+            <td>rfc</td>
+            <td>string</td>
+            <td>Opcional</td>
+            <td>Indica un RFC para traer todos los CFDI's timbrados al mismo. Ejemplo: XAXX010101000.</td>
+        </tr>
+        <tr>
+            <td>type_document</td>
+            <td>string</td>
+            <td>Opcional</td>
+            <td>Indica un tipo de CFDI para listar solo los CFDI's de ese tipo. Para ello enviar la clave indicada en el catálogo de Tipos de CFDI. Ejemplo: factura. Consulta el catálogo de tipos de CFDIs.</td>
+        </tr>
+        <tr>
+            <td>page</td>
+            <td>int</td>
+            <td>Opcional</td>
+            <td>Indica número de página a consultar, por default posiciona en la página 1.</td>
+        </tr>
+        <tr>
+            <td>per_page</td>
+            <td>int</td>
+            <td>Opcional</td>
+            <td>Indica el limite de resultados para mostrar, por default retorna 100 registros.</td>
         </tr>
     </body>
 </table>
