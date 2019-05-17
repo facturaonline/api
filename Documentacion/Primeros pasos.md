@@ -1,9 +1,11 @@
+# Primeros pasos
+
 Para hacer uso del API de Facturaonline.com.mx es necesario hacer uso del formato **JSON**.  
 Todas las respuestas, exitosas o de error, están en formato **JSON**.  
 Es necesario incluir en las cabeceras el token de acceso llamado **API KEY** y **SECRET KEY**.  
 
 
-# Obtener API KEY y SECRET KEY
+#### Obtener API KEY y SECRET KEY
 
 Para obtener tus llaves de acceso deber seguir los siguientes pasos:
 * Iniciar sesión en https://Facturaonline.com.mx.
