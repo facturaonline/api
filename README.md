@@ -22,7 +22,7 @@ La documentación de la API de Facturaonline.com.mx ofrece una descripción de l
 
 #### Complementos
 [Complemento de pago](https://github.com/facturaonline/api/blob/master/Complementos/Complemento%20de%20pago.md)  
- &emsp;[Relacionados](https://github.com/facturaonline/api/tree/master/Complementos/Complemento%20de%20pago)  
+ &emsp;[Relacionados](https://github.com/facturaonline/api/blob/master/Complementos/Complemento%20de%20pago/Relacionados.md)  
 [CFDIs relacionados](https://github.com/facturaonline/api/blob/master/Complementos/CFDIs%20relacionados.md)  
 
 #### Catálogos
