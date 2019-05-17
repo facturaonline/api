@@ -19,14 +19,10 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
             <td>Requerido</td>
             <td>Indica el UID del receptor/cliente previamente creado en facturaonline.com.mx.
             Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/receptor.
-            **Ejemplo**:
-            ```
-            "Receptor": {
+            Ejemplo: "Receptor": {
                 "ResidenciaFiscal": "",
                 "UID": "55c0fdc67593d"
-            }
-            ```
-            </td>
+            }</td>
         </tr>
         <tr>
             <td>TipoCfdi</td>
