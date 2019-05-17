@@ -4,19 +4,23 @@ A continuación se explica como listar los CFDI's , con un ejemplo y  muestra de
 Podemos consultar los CFDI's filtrando por los siguientes parámetros:
 
 <table>
-  <tr>
-    <td>Parámetro</td>
-    <td>Tipo</td>
-    <td>Requerido</td>
-    <td>Detalles</td>
-  </tr>
-  <tr>
-    <td>month</td>
-    <td>number</td>
-    <td>Opcional</td>
-    <td>Induca el número de mes que deseas consultar. Éste debe estar escrito en 2 dígitos.  
-    Ejemplo: Enero = 01, Diciembre = 12, etc.</td>
-  </tr>
+    <thead>
+        <tr>
+            <th>Parámetro</th>
+            <th>Tipo</th>
+            <th>Requerido</th>
+            <th>Detalles</th>
+        </tr>
+    </thead>
+    <body>
+        <tr>
+            <td>month</td>
+            <td>number</td>
+            <td>Opcional</td>
+            <td>Induca el número de mes que deseas consultar. Éste debe estar escrito en 2 dígitos.  
+            Ejemplo: Enero = 01, Diciembre = 12, etc.</td>
+        </tr>
+    </body>
 </table>
 
 
