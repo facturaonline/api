@@ -190,64 +190,64 @@ Es necesario que envíes los valores (precios, cálculo de impuestos, subtotales
 
 ```
 
-{
-    "codes": [{
-        "code": "<?php for ($x = 1; $x <= 1; $x++) {
-            $Conceptos[] = [
-                'ClaveProdServ' => '81112107',
-                'Cantidad' => '1',
-                'ClaveUnidad' => 'E48',
-                'Unidad' => 'Unidad de servicio',
-                'ValorUnitario' => '100',
-                'Descripcion' => 'Desarrollo a la medida',
-                'Descuento' => '0',
-                'Impuestos' => [
-                    'Traslados' => [[
-                        'Base' => '100',
-                        'Impuesto' => '002',
-                        'TipoFactor' => 'Tasa',
-                        'TasaOCuota' => '0.160000',
-                        'Importe' => '16'
-                    ],]
-                ],
-            ];
-        }
+<?php
 
-        $ch = curl_init();
-        $fields = [
-            "Receptor" => ["UID" => "55c0fdc675XXX"],
-            "TipoDocumento" => "factura",
-            "UsoCFDI" => "P01",
-            "Redondeo" => 2,
-            "Conceptos" => $Conceptos,
-            "FormaPago" => "01",
-            "MetodoPago" => 'PUE',
-            "Moneda" => "MXN",
-            "CondicionesDePago" => "Pago en una sola exhibición",
-            "Serie" => 1,
-            "EnviarCorreo" => 'true',
-            "InvoiceComments" => ""
-        ];
-
-        $jsonfield = json_encode($fields);
-        curl_setopt($ch, CURLOPT_URL, "http://facturaonline.con.mx/api/v3/cfdi33/create");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_HEADER, FALSE);
-        curl_setopt($ch, CURLOPT_POST, TRUE);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonfield);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            "Content-Type: application/json",
-            "F-PLUGIN":  '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
-            "F-Api-Key": 'Ingresa API KEY',
-            "F-Secret-Key": 'Ingresa SECRET KEY'
-        ));
-        $response = curl_exec($ch);
-        return die($response);
-        curl_close($ch); ?>",
-        "language": "php",
-        "name": "crear_cfdi.php"
-    }]
+for ($x = 1; $x <= 1; $x++) {
+    $Conceptos[] = [
+        'ClaveProdServ' => '81112107',
+        'Cantidad' => '1',
+        'ClaveUnidad' => 'E48',
+        'Unidad' => 'Unidad de servicio',
+        'ValorUnitario' => '100',
+        'Descripcion' => 'Desarrollo a la medida',
+        'Descuento' => '0',
+        'Impuestos' => [
+            'Traslados' => [
+                ['Base' => '100', 'Impuesto' => '002', 'TipoFactor' => 'Tasa', 'TasaOCuota' => '0.160000', 'Importe' => '16'],
+            ]
+        ],
+    ];
 }
+
+$ch = curl_init();
+$fields = [
+    "Receptor" => ["UID" => "55c0fdc675XXX"],
+    "TipoDocumento" => "factura",
+    "UsoCFDI" => "P01",
+    "Redondeo" => 2,
+    "Conceptos" => $Conceptos,
+    "FormaPago" => "01",
+    "MetodoPago" => 'PUE',
+    "Moneda" => "MXN",
+    "CondicionesDePago" => "Pago en una sola exhibición",
+    "Serie" => 1,
+    "EnviarCorreo" => 'true',
+    "InvoiceComments" => ""
+];
+
+$jsonfield = json_encode($fields);
+
+
+curl_setopt($ch, CURLOPT_URL, "http://devfactura.in/api/v3/cfdi33/create");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+curl_setopt($ch, CURLOPT_POST, TRUE);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonfield);
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    "Content-Type: application/json",
+    "F-PLUGIN: " . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
+    "F-API-KEY: ". 'Ingresa API KEY',
+    "F-SECRET-KEY: " . 'Ingresa SECRET KEY'
+));
+
+$response = curl_exec($ch);
+
+return die($response);
+
+curl_close($ch);
+
+?>
 
 ```
 
@@ -262,53 +262,49 @@ Para probar el código de ejemplo es necesario que reemplaces el texto  **Ingres
 Por disposición del SAT los valores de traslados, descuentos, precios, etc, deberán tener **hasta 6 decimales**. El redondeo debe ser a **2 decimales**  y aplica solamente a subtotales, suma de traslados y suma de retenidos.
 
 
-#### Respuesta
+#### Respuesta exitosa
 
 ```
 
 {
-    "codes": [
-        {
-            "code": {
-                "response": "success",
-                "message": "Factura creada y enviada satisfactoriamente",
-                "UUID": "8ff503a2-c6b7-4a25-XXX-a25610e6b488",
-                "uid": "5c06fa8b3bbe6",
-                "SAT": {
-                    "UUID": "8ff503a2-c6b7-XXX-92c7-a25610e6b488",
-                    "FechaTimbrado": "2018-12-04T16:07:08",
-                    "NoCertificadoSAT": "20001000000300022323"
-                    ,"Version": "1.1",
-                    "SelloSAT": "lzlv2bEVsjx8XkiJHJvlfCjr7xJ/laxZnvSmGSKF3C/HI9WFDYFFk4NfGyILBj8ll7m1VoCqlkSLvu9dRex4jSSGfPJOPGDrx7w/4AOj/scHPU23uIPhztnaHIYHKg9UxP4L9rgX814msJ8V86IXZ1nY7akr77Cpf2c2yAnHaO1fm81oQIe32obIs2GrOey6JG9oxQNrcUawSXXXXXXXX",
-                    "SelloCFD": "NJQH6WT8eLxAeti7pUWhB7F6C6xrdSqkFfORf3+SeGkhu+5E0cZZUQjgaSZLpPcgk01aQUf0Jayw2GewYou5MjD4OLzZnZuizPwy3cSfQXzgX6sJTtAsI00VyhQewxLYDSMqFUrPpniNQG8Nl/eEg1kx72kkmqih2KX2Z+URkhx14W7CMG2aMJnhDyZuyliF+cy3utjXwzxQMl+28A/mgnlfUXzZd/3IunTtxM/p4bpqbYinK+7Bd/n+90Z6axsFBs6N7wxUX6aK9YL58owhgVGXXXXXXXX"
-                },
-                "INV": {
-                    "Serie": "F",
-                    "Folio": 1433
-                },
-                "invoice_uid": "5c06fa8b3bXXX"
-            },
-            "language": "json",
-            "name": "Respuesta exitosa"
-        },
-        {
-            "code": {
-                "response": "error",
-                "message": {
-                    "message": "CFDI33161 - El valor del campo Importe o que corresponde a Traslado no se encuentra entre el limite inferior y superior permitido.",
-                    "messageDetail": "Comprobante:Concepto:Impuestos:Traslado:Importe: El Importe es mayor o menor al limite superior/inferior calculado. LimiteSuperiorCalculado: 17 LimiteInferiorCalculado: 15 Comprobante:Concepto:Impuestos:Traslado:Importe: 19",
-                    "data": null,
-                    "status": "error"
-                },
-                "xmlerror":"<cfdi:Traslados><cfdi:Impuestos><cfdi:Concepto><cfdi:Conceptos><cfdi:Traslados><cfdi:Impuestos><cfdi:Comprobante>"
-            },
-            "language": "json",
-            "name": "Respuesta error "
-        }
-    ]
+    "response": "success",
+    "message": "Factura creada y enviada satisfactoriamente",
+    "UUID": "8ff503a2-c6b7-4a25-XXX-a25610e6b488",
+    "uid": "5c06fa8b3bbe6",
+    "SAT": {
+        "UUID": "8ff503a2-c6b7-XXX-92c7-a25610e6b488",
+        "FechaTimbrado": "2018-12-04T16:07:08",
+        "NoCertificadoSAT": "20001000000300022323",
+        "Version": "1.1",
+        "SelloSAT": "lzlv2bEVsjx8XkiJHJvlfCjr7xJ/laxZnvSmGSKF3C/HI9WFDYFFk4NfGyILBj8ll7m1VoCqlkSLvu9dRex4jSSGfPJOPGDrx7w/4AOj/scHPU23uIPhztnaHIYHKg9UxP4L9rgX814msJ8V86IXZ1nY7akr77Cpf2c2yAnHaO1fm81oQIe32obIs2GrOey6JG9oxQNrcUawSXXXXXXXX",
+        "SelloCFD": "NJQH6WT8eLxAeti7pUWhB7F6C6xrdSqkFfORf3+SeGkhu+5E0cZZUQjgaSZLpPcgk01aQUf0Jayw2GewYou5MjD4OLzZnZuizPwy3cSfQXzgX6sJTtAsI00VyhQewxLYDSMqFUrPpniNQG8Nl/eEg1kx72kkmqih2KX2Z+URkhx14W7CMG2aMJnhDyZuyliF+cy3utjXwzxQMl+28A/mgnlfUXzZd/3IunTtxM/p4bpqbYinK+7Bd/n+90Z6axsFBs6N7wxUX6aK9YL58owhgVGXXXXXXXX"
+    },
+    "INV": {
+        "Serie": "F",
+        "Folio": 1433
+    },
+    "invoice_uid": "5c06fa8b3bXXX"
 }
 
 ```
+
+#### Respuesta error
+
+```
+
+{
+    "response": "error",
+    "message": {
+        "message": "CFDI33161 - El valor del campo Importe o que corresponde a Traslado no se encuentra entre el limite inferior y superior permitido.",
+        "messageDetail": "Comprobante:Concepto:Impuestos:Traslado:Importe: El Importe es mayor o menor al limite superior/inferior calculado. LimiteSuperiorCalculado: 17 LimiteInferiorCalculado: 15 Comprobante:Concepto:Impuestos:Traslado:Importe: 19",
+        "data": null,
+        "status": "error"
+    },
+    "xmlerror": "\n</cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos></cfdi:Traslados></cfdi:Impuestos></cfdi:Comprobante>\n"
+}
+
+```
+
 
 #### Sobre errores
 
