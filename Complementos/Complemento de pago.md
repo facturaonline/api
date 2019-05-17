@@ -57,7 +57,7 @@ Podemos crear un **CFDI con complemento de pago** haciendo uso de los siguientes
             <td>Requerido</td>
             <td>Indica id de la serie con la que deseas timbrar el documento.
             Ésta debe estar dada de alta en tu panel de Facturaonline.com.mx y coincidir con el tipo de CFDI que deseas timbrar.
-            Para obtenerlo  Inicia sesión  y dirígete al  Menú lateral  - Configuraciones  -  Series y folios​.
+            Para obtenerlo  Inicia sesión  y dirígete al  **Menú lateral / Configuraciones / Series y folios​**.
             Ejemplo: "Serie": 1247</td>
         </tr>
         <tr>
