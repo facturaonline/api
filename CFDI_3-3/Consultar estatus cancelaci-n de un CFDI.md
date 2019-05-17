@@ -3,23 +3,25 @@
 A continuación se explica como consultar el estatus de la cancelación de un CFDI con un ejemplo de como hacerlo.  
 Podemos consultar el estatus CFDI haciendo uso del siguiente parámetro:
 
-```
-{
-    "data": {
-        "h-0": "Parámetro",
-        "h-1": "Tipo",
-        "h-2": "Requerido",
-        "h-3": "Detalles",
-        "0-0": "uid",
-        "0-1": "string",
-        "0-2": "Requerido",
-        "0-3": "Indica el UID o UUID del CFDI que deseas consultar.\n\n**Ejemplo**:\n55c0fdc67593d"
-    },
-    "cols": 4,
-    "rows": 1
-}
-
-```
+<table>
+    <thead>
+        <tr>
+            <th>Parámetro</th>
+            <th>Tipo</th>
+            <th>Requerido</th>
+            <th>Detalles</th>
+        </tr>
+    <thead>
+    <tbody>
+        <tr>
+            <td>uid</td>
+            <td>string</td>
+            <td>Requerido</td>
+            <td>Indica el UID o UUID del CFDI que deseas consultar.
+            Ejemplo: "55c0fdc67593d"</td>
+        </tr>
+    </tbody>
+</table>
 
 
 #### Construcción de la URL
@@ -34,25 +36,24 @@ Podemos consultar el estatus CFDI haciendo uso del siguiente parámetro:
 
 ```
 
-{
-    "codes": [{
-        "code": "<?php\n$ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v3/cfdi33/uid/cancel");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_HEADER, FALSE);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            "Content-Type: application/json",
-            "F-PLUGIN: " . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
-            "F-Api-Key: ". 'Ingresa API KEY',
-            "F-Secret-Key: " . 'Ingresa SECRET KEY'
-        ));
-        $response = curl_exec($ch);
-        curl_close($ch);
-        var_dump($response);",
-        "language": "php",
-        "name": "cancel_status_cfdi.php"
-    }]
-}
+<?php
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v3/cfdi33/uid/cancel");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+   "Content-Type: application/json",
+    "F-PLUGIN: " . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
+    "F-Api-Key: ". 'Ingresa API KEY',
+    "F-Secret-Key: " . 'Ingresa SECRET KEY'
+));
+
+$response = curl_exec($ch);
+curl_close($ch);
+
+var_dump($response);
 
 ```
 
@@ -62,52 +63,52 @@ Para probar el código de ejemplo es necesario que reemplaces el texto  **Ingres
 Además de reemplazar **uid**  por el UID o UUID del CFDI que deseas consultar.
 
 
-#### Respuesta
+#### Estatus vigente cancelable
 
 ```
 
 {
-    "codes": [
-        {
-            "code": {
-                "response": "success",
-                "data": {
-                    "CodigoEstatus": "S - Comprobante obtenido satisfactoriamente.",
-                    "Estado": "Vigente",
-                    "EsCancelable": "Cancelable sin aceptación",
-                    "EstatusCancelacion": []
-                    }
-                },
-                "language": "json",
-                "name": "Estatus vigente cancelable"
-        },
-        {
-            "code": {
-                "response": "success",
-                "data": {
-                    "CodigoEstatus": "S - Comprobante obtenido satisfactoriamente.",
-                    "Estado": "Cancelado",
-                    "EsCancelable": "Cancelable sin aceptación",
-                    "EstatusCancelacion": "Cancelado sin aceptación"
-                }
-            },
-            "language": "json",
-            "name": "Estatus cancelado"
-        },
-        {
-            "code": {
-                "response": "success",
-                "data": {
-                    "CodigoEstatus": "S - Comprobante obtenido satisfactoriamente.",
-                    "Estado": "Vigente",
-                    "EsCancelable": "No Cancelable",
-                    "EstatusCancelacion": []
-                }
-            },
-            "language": "json",
-            "name": "Estatus vigente no cancelable"
-        }
-    ]
+    "response": "success",
+    "data": {
+        "CodigoEstatus": "S - Comprobante obtenido satisfactoriamente.",
+        "Estado": "Vigente",
+        "EsCancelable": "Cancelable sin aceptación",
+        "EstatusCancelacion": []
+    }
+}
+
+```
+
+
+#### Estatus cancelado
+
+```
+
+{
+    "response": "success",
+    "data": {
+        "CodigoEstatus": "S - Comprobante obtenido satisfactoriamente.",
+        "Estado": "Cancelado",
+        "EsCancelable": "Cancelable sin aceptación",
+        "EstatusCancelacion": "Cancelado sin aceptación"
+    }
+}
+
+```
+
+
+#### Estatus vigente no cancelable
+
+```
+
+{
+    "response": "success",
+    "data": {
+        "CodigoEstatus": "S - Comprobante obtenido satisfactoriamente.",
+        "Estado": "Vigente",
+        "EsCancelable": "No Cancelable",
+        "EstatusCancelacion": []
+    }
 }
 
 ```
