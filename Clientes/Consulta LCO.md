@@ -6,9 +6,9 @@ Servicio para identificar que los RFC (emisores y receptores) que intervienen en
 
 #### Construcción de la URL
 
-**Host**: https://factura.com  
+**Host**: https://facturaonline.com.mx  
 **Endpoint**:  /api/v1/clients/lco/{RFC}  
-**Ejemplo**:  https://factura.com/api/v1/clients/lco/{RFC}  
+**Ejemplo**:  https://facturaonline.com.mx/api/v1/clients/lco/{RFC}  
 
 
 #### Ejemplo
@@ -18,7 +18,7 @@ Servicio para identificar que los RFC (emisores y receptores) que intervienen en
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v1/clients/lco/XAXX010101000");
+curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v1/clients/lco/XAXX010101000");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 

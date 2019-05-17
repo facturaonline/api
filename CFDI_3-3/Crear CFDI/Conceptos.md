@@ -49,15 +49,15 @@ Para cada concepto es necesario incluir los siguientes atributos:
     "9-2": "Opcional",
     "10-2": "Opcional",
     "11-2": "Opcional",
-    "3-3": "Indica la clave de la unidad  de medida correspondiente a tu concepto.\n\n[Consulta el listado de claves válidas para el SAT.](https://developers.factura.com/docs/unidad)\n\n**Ejemplo**:\n\"ClaveUnidad\": \"E48\"",
-    "4-3": "Indica la unidad de medida. Ésta debe coincidir con la clave de la unidad ingresada en el parámetro anterior.\n\n[Consulta el listado de claves válidas para el SAT.](https://developers.factura.com/docs/unidad)\n\n**Ejemplo**:\n \"Unidad\": \"Unidad de servicio\"",
+    "3-3": "Indica la clave de la unidad  de medida correspondiente a tu concepto.\n\n[Consulta el listado de claves válidas para el SAT.](https://facturaonline.com.mx/docs/unidad)\n\n**Ejemplo**:\n\"ClaveUnidad\": \"E48\"",
+    "4-3": "Indica la unidad de medida. Ésta debe coincidir con la clave de la unidad ingresada en el parámetro anterior.\n\n[Consulta el listado de claves válidas para el SAT.](https://facturaonline.com.mx/docs/unidad)\n\n**Ejemplo**:\n \"Unidad\": \"Unidad de servicio\"",
     "5-3": "Indica el precio unitario sin incluir impuestos.\n\n**Ejemplo**:\n \"ValorUnitario\": \"15000.00\"",
     "6-3": "Indica la descripción del concepto.\n\n**Ejemplo**:\n\"Descripcion\": \"Desarrollo web a la medida\"",
     "7-3": "Indica el importe del descuento, en caso de desear agregarlo.\n\n**Ejemplo**:\n\"Descuento\": \"10.00\"",
-    "8-3": "Indicar los impuestos (traslados, locales y retenidos) que tendrá el concepto.\n\n[Consulta los parámetros que debe contener.](https://developers.factura.com/docs/impuestos)\n\n**Ejemplo**:\n      \"Impuestos\": {\n        \"Traslados\": [\n          {\n            \"Base\": \"15000.000000\",\n            \"Impuesto\": \"002\",\n            \"TipoFactor\": \"Tasa\",\n            \"TasaOCuota\": \"0.16\",\n            \"Importe\": \"2400.000000\"\n          }\n        ],\n        \"Retenidos\": [],\n        \"Locales\": []\n      }",
+    "8-3": "Indicar los impuestos (traslados, locales y retenidos) que tendrá el concepto.\n\n[Consulta los parámetros que debe contener.](https://facturaonline.com.mx/docs/impuestos)\n\n**Ejemplo**:\n      \"Impuestos\": {\n        \"Traslados\": [\n          {\n            \"Base\": \"15000.000000\",\n            \"Impuesto\": \"002\",\n            \"TipoFactor\": \"Tasa\",\n            \"TasaOCuota\": \"0.16\",\n            \"Importe\": \"2400.000000\"\n          }\n        ],\n        \"Retenidos\": [],\n        \"Locales\": []\n      }",
     "9-3": "Indica el número del pedimento correspondiente a la importación del bien.\n\n**Ejemplo**:\n \"NumeroPedimento\" : \"15 48 3009 0001234\"",
     "10-3": "Indica el número de predial en caso de ser necesario.\n\n**Ejemplo**:\n \"Predial\": \"56485422\",",
-    "11-3": "Indica las partes o componentes que integran la totalidad del concepto.\n[\nVer los atributos que puede contener](https://developers.factura.com/docs/partes)."
+    "11-3": "Indica las partes o componentes que integran la totalidad del concepto.\n[\nVer los atributos que puede contener](https://facturaonline.com.mx/docs/partes)."
   },
   "cols": 4,
   "rows": 12

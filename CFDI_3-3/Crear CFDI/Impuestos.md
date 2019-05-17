@@ -20,15 +20,15 @@ El nodo de impuestos  se conforma de los siguientes atributos:
     "h-3": "Detalles",
     "0-1": "array",
     "0-2": "Requerido*\n\n*** Es requerido siempre y cuando la factura lleve el tipo de impuesto Traslado.**",
-    "0-3": "Indica los impuestos trasladados que se aplican a tu concepto.\n\n[Ver listado de atributos posibles para este nodo.](https://developers.factura.com/docs/impuestos#traslados-retenidos)\n\n**Ejemplo**:\n\"Traslados\": [\n          {\n            \"Base\": \"15000.00\",\n            \"Impuesto\": \"002\",\n            \"TipoFactor\": \"Tasa\",\n            \"TasaOCuota\": \"0.16\",\n            \"Importe\": \"2400.00\"\n          }\n        ],",
+    "0-3": "Indica los impuestos trasladados que se aplican a tu concepto.\n\n[Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/impuestos#traslados-retenidos)\n\n**Ejemplo**:\n\"Traslados\": [\n          {\n            \"Base\": \"15000.00\",\n            \"Impuesto\": \"002\",\n            \"TipoFactor\": \"Tasa\",\n            \"TasaOCuota\": \"0.16\",\n            \"Importe\": \"2400.00\"\n          }\n        ],",
     "1-0": "Retenidos",
     "1-1": "array",
     "1-2": "Requerido*\n\n*** Es requerido siempre y cuando la factura lleve el tipo de impuesto Retenciones.**",
-    "1-3": "Indica los impuestos retenidos que se aplican a tu concepto.\n\n[Ver listado de atributos posibles para este nodo.](https://developers.factura.com/docs/impuestos#traslados-retenidos)\n\n**Ejemplo**:\n\"Retenidos\": [\n          {\n            \"Base\": \"15000.00\",\n            \"Impuesto\": \"002\",\n            \"TipoFactor\": \"Tasa\",\n            \"TasaOCuota\": \"0.16\",\n            \"Importe\": \"2400.00\"\n          }\n        ],",
+    "1-3": "Indica los impuestos retenidos que se aplican a tu concepto.\n\n[Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/impuestos#traslados-retenidos)\n\n**Ejemplo**:\n\"Retenidos\": [\n          {\n            \"Base\": \"15000.00\",\n            \"Impuesto\": \"002\",\n            \"TipoFactor\": \"Tasa\",\n            \"TasaOCuota\": \"0.16\",\n            \"Importe\": \"2400.00\"\n          }\n        ],",
     "2-0": "Locales",
     "2-1": "array",
     "2-2": "Requerido*\n\n*** Es requerido siempre y cuando la factura lleve el tipo de impuesto Locales.**",
-    "2-3": "Indica los impuestos locales que se aplican a tu concepto.\n\n[Ver listado de atributos posibles para este nodo.](https://developers.factura.com/docs/impuestos#locales)\n\n**Ejemplo**:\n\"Locales\": [\n          {\n            \"Impuesto\": \"ISH\",\n            \"TasaOCuota\": \"0.05\",\n          }\n        ],"
+    "2-3": "Indica los impuestos locales que se aplican a tu concepto.\n\n[Ver listado de atributos posibles para este nodo.](https://facturaonline.com.mx/docs/impuestos#locales)\n\n**Ejemplo**:\n\"Locales\": [\n          {\n            \"Impuesto\": \"ISH\",\n            \"TasaOCuota\": \"0.05\",\n          }\n        ],"
   },
   "cols": 4,
   "rows": 3

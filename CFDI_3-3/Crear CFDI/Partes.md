@@ -45,8 +45,8 @@ El nodo de Partes se conforma de los siguientes atributos:
     "0-3": "Indica la clave del producto o servicio correspondiente a tu concepto.\n\n Es importante que ésta la tomes del catálogo proveído por el SAT para que sea válida.\n\n**Ejemplo**:\n\"ClaveProdServ\": \"43232408\"",
     "1-3": "Indica el número de identificación o SKU en caso de tenerlo.\n\n**Ejemplo**:\n \"NoIdentificacion\": \"WEBDEV10\"",
     "2-3": "Indica la cantidad.\n\n**Ejemplo**:\n'Cantidad' : '1'",
-    "3-3": "Indica la clave de la unidad  de medida correspondiente a tu concepto.\n\n[Consulta el listado de claves válidas para el SAT.](https://developers.factura.com/docs/unidad)\n\n**Ejemplo**:\n\"ClaveUnidad\": \"E48\"",
-    "4-3": "Indica la unidad de medida. Ésta debe coincidir con la clave de la unidad ingresada en el parámetro anterior.\n\n[Consulta el listado de claves válidas para el SAT.](https://developers.factura.com/docs/unidad)\n\n**Ejemplo**:\n \"Unidad\": \"Unidad de servicio\"",
+    "3-3": "Indica la clave de la unidad  de medida correspondiente a tu concepto.\n\n[Consulta el listado de claves válidas para el SAT.](https://facturaonline.com.mx/docs/unidad)\n\n**Ejemplo**:\n\"ClaveUnidad\": \"E48\"",
+    "4-3": "Indica la unidad de medida. Ésta debe coincidir con la clave de la unidad ingresada en el parámetro anterior.\n\n[Consulta el listado de claves válidas para el SAT.](https://facturaonline.com.mx/docs/unidad)\n\n**Ejemplo**:\n \"Unidad\": \"Unidad de servicio\"",
     "5-3": "Indica el precio unitario sin incluir impuestos.\n\n**Ejemplo**:\n \"ValorUnitario\": \"15000.00\"",
     "6-3": "Indica la descripción del concepto.\n\n**Ejemplo**:\n\"Descripcion\": \"Desarrollo web a la medida\""
   },

@@ -18,7 +18,7 @@ Podemos listar todos los clientes que tenemos registrados en el sistema.
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v1/clients");
+curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v1/clients");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -72,7 +72,7 @@ Para probar el código de ejemplo es necesario que reemplaces el texto  **Ingres
                 }]
             }
         ],
-        "UID": "Id único e irrepetible asignado por Factura.com y que servirá para la gestión interna del docmento."
+        "UID": "Id único e irrepetible asignado por facturaonline.com.mx y que servirá para la gestión interna del docmento."
     }
 ]
 

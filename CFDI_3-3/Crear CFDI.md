@@ -228,7 +228,7 @@ $fields = [
 $jsonfield = json_encode($fields);
 
 
-curl_setopt($ch, CURLOPT_URL, "http://devfactura.in/api/v3/cfdi33/create");
+curl_setopt($ch, CURLOPT_URL, "http://facturaonline.com.mx/api/v3/cfdi33/create");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_POST, TRUE);

@@ -38,7 +38,7 @@ Podemos enviar un CFDI haciendo uso del siguiente parámetro:
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v3/cfdi33/cfdi_uid/email");
+curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v3/cfdi33/cfdi_uid/email");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 

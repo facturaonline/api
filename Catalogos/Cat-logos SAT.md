@@ -1,7 +1,7 @@
 # Catálogos SAT
 
 Puedes consultar los catálogos que el SAT provee para el timbrado.  
-El API de factura.com cuenta con endpoints puestos a tu disposición para consultar los catálogos de claves válidas para el SAT.
+El API de facturaonline.com.mx cuenta con endpoints puestos a tu disposición para consultar los catálogos de claves válidas para el SAT.
 
 
 #### Construcción de la URL

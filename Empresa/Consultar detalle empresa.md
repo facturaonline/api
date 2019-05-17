@@ -38,7 +38,7 @@ Para consultar una empresa es necesario enviar el **UID** de la misma.
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "http://devfactura.in/api/v1/account/UID");
+curl_setopt($ch, CURLOPT_URL, "http://facturaonline.com.mx/api/v1/account/UID");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 

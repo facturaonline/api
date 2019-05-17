@@ -104,7 +104,7 @@ Para actualizar la información de una empresa es necesario enviar los siguiente
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v1/account/client_uid/update");
+curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v1/account/client_uid/update");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 

@@ -16,7 +16,7 @@ A continuación se explica como obtener los detalles de la empresa actual con la
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "http://devfactura.in/api/v1/current/account");
+curl_setopt($ch, CURLOPT_URL, "http://facturaonline.com.mx/api/v1/current/account");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 

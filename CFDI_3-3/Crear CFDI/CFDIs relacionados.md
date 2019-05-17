@@ -27,7 +27,7 @@ El nodo de CfdiRelacionados se conforma de los siguientes atributos:
     "1-1": "Array",
     "0-2": "Requerido",
     "1-2": "Requerido",
-    "0-3": "Indicar la clave del tipo de relación correspondiente.\n\n[Revisar el listado de claves proporcionado por el SAT.](https://developers.factura.com/docs/tipo-de-relaci%C3%B3n)\n\n**Ejemplo**:\n\"TipoRelacion\": \"01\"",
+    "0-3": "Indicar la clave del tipo de relación correspondiente.\n\n[Revisar el listado de claves proporcionado por el SAT.](https://facturaonline.com.mx/docs/tipo-de-relaci%C3%B3n)\n\n**Ejemplo**:\n\"TipoRelacion\": \"01\"",
     "1-3": "Indicar el o los UID de los CFDIS con los que se relaciona el actual.\n\n**Ejemplo**:\n \"UUID\": [\n      \"29c98cb2-f72a-4cbe-a297-606da335e187\",\n      \"a96f6b9a-70aa-4f2d-bc5e-d54fb7371236\"\n    ]"
   },
   "cols": 4,

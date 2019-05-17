@@ -37,7 +37,7 @@ Para consultar un RFC en específico es necesario enviarlo en la petición.
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://factura.com/api/v1/clients/rfc/el_rfc");
+curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v1/clients/rfc/el_rfc");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -96,7 +96,7 @@ En caso de tener más de un cliente registrado con el mismo RFC, la respuesta a 
                     "Telefono":"Número de teléfono del cliente"
                 }]
                                 }                ],
-        "UID": "Id único e irrepetible asignado por Factura.com y que servirá para la gestión interna del docmento."
+        "UID": "Id único e irrepetible asignado por facturaonline.com.mx y que servirá para la gestión interna del docmento."
     },
     {
                 "RazonSocial" : "Razón Social del cliente",
@@ -120,7 +120,7 @@ En caso de tener más de un cliente registrado con el mismo RFC, la respuesta a 
                     "Telefono":"Número de teléfono del cliente"
                 }]
                                 }                ],
-        "UID": "Id único e irrepetible asignado por Factura.com y que servirá para la gestión interna del docmento."
+        "UID": "Id único e irrepetible asignado por facturaonline.com.mx y que servirá para la gestión interna del docmento."
     },
     {
                 "RazonSocial" : "Razón Social del cliente",
@@ -144,7 +144,7 @@ En caso de tener más de un cliente registrado con el mismo RFC, la respuesta a 
                     "Telefono":"Número de teléfono del cliente"
                 }]
                                 }                ],
-        "UID": "Id único e irrepetible asignado por Factura.com y que servirá para la gestión interna del docmento."
+        "UID": "Id único e irrepetible asignado por facturaonline.com.mx y que servirá para la gestión interna del docmento."
     }
 ]
 
