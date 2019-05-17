@@ -100,46 +100,46 @@ Para probar el código de ejemplo es necesario que reemplaces el texto  **Ingres
 ```
 
 {
-  "status": "success",
-  "response": "success",
-  "total": 2479,
-  "per_page": 100,
-  "current_page": 1,
-  "last_page": 25,
-  "from": 1,
-  "to": 100,
-  "data": [
-    {
-      "RazonSocialReceptor": "Venta Al Público en General",
-      "Folio": "F 01",
-      "UID": "5c04c662exxxx",
-      "UUID": "1750d757-577d-xxxx-xxxx-518b87b24a87",
-      "Subtotal": "5.000000",
-      "Descuento": null,
-      "Total": "5.800000",
-      "ReferenceClient": 0,
-      "NumOrder": null,
-      "Receptor": "XAXX010101000",
-      "FechaTimbrado": "2018-12-03",
-      "Status": "enviada",
-      "Version": "3.3"
-    },
-    {
-      "RazonSocialReceptor": "Cliente ejemplo",
-      "Folio": "F 160",
-      "UID": "5c033ca2e4xxx",
-      "UUID": "c25c6c99-xxx-xxx-810e-e5ae7e12eb15",
-      "Subtotal": "10000.000000",
-      "Descuento": null,
-      "Total": "11600.000000",
-      "ReferenceClient": 15,
-      "NumOrder": null,
-      "Receptor": "XAXX010101000",
-      "FechaTimbrado": "2018-12-01",
-      "Status": "enviada",
-      "Version": "3.3"
-    }
-  ]
+    "status": "success",
+    "response": "success",
+    "total": 2479,
+    "per_page": 100,
+    "current_page": 1,
+    "last_page": 25,
+    "from": 1,
+    "to": 100,
+    "data": [
+        {
+            "RazonSocialReceptor": "Venta Al Público en General",
+            "Folio": "F 01",
+            "UID": "5c04c662exxxx",
+            "UUID": "1750d757-577d-xxxx-xxxx-518b87b24a87",
+            "Subtotal": "5.000000",
+            "Descuento": null,
+            "Total": "5.800000",
+            "ReferenceClient": 0,
+            "NumOrder": null,
+            "Receptor": "XAXX010101000",
+            "FechaTimbrado": "2018-12-03",
+            "Status": "enviada",
+            "Version": "3.3"
+        },
+        {
+            "RazonSocialReceptor": "Cliente ejemplo",
+            "Folio": "F 160",
+            "UID": "5c033ca2e4xxx",
+            "UUID": "c25c6c99-xxx-xxx-810e-e5ae7e12eb15",
+            "Subtotal": "10000.000000",
+            "Descuento": null,
+            "Total": "11600.000000",
+            "ReferenceClient": 15,
+            "NumOrder": null,
+            "Receptor": "XAXX010101000",
+            "FechaTimbrado": "2018-12-01",
+            "Status": "enviada",
+            "Version": "3.3"
+        }
+    ]
 }
 
 ```
@@ -150,10 +150,10 @@ Para probar el código de ejemplo es necesario que reemplaces el texto  **Ingres
 ```
 
 {
-  "status": "error",
-  "message": "La cuenta que intenta autenticarse no existe",
-  "Data": "$2y$10$dnOV7qC7ZrD1CZitpUnTReLKtKPxG29XfwZylrEuiR0KVl18pOXXX",
-  "Secret": "$2y$10$6ZN4aX5UExwz6HFlDSZcxOF1TGjHx8f40neE.CrXHHahyAfi8qiXXX"
+    "status": "error",
+    "message": "La cuenta que intenta autenticarse no existe",
+    "Data": "$2y$10$dnOV7qC7ZrD1CZitpUnTReLKtKPxG29XfwZylrEuiR0KVl18pOXXX",
+    "Secret": "$2y$10$6ZN4aX5UExwz6HFlDSZcxOF1TGjHx8f40neE.CrXHHahyAfi8qiXXX"
 }
 
 ```
