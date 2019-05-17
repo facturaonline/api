@@ -15,29 +15,26 @@ Podemos consultar los folios de todas las series de la empresa.
 
 ```
 
-{
-    "codes": [
-        {
-            "code": "<?php
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://devfactura.in/api/v1/series");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-            curl_setopt($ch, CURLOPT_HEADER, FALSE);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                "Content-Type: application/json",
-                "F-PLUGIN: " . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
-                "F-Api-Key: ".'Ingresa API KEY',
-                "F-Secret-Key: " .'Ingresa SECRET KEY'
-            ));
-            $response = curl_exec($ch);
-            curl_close($ch);
-            var_dump($response);
-            ",
-            "language": "php",
-            "name": "listar_series.php"
-        }
-    ]
-}
+<?php
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, "http://facturaonline.com.mx/api/v1/series");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    "Content-Type: application/json",
+    "F-PLUGIN: " . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
+    "F-Api-Key: ".'Ingresa API KEY',
+    "F-Secret-Key: " .'Ingresa SECRET KEY'
+));
+
+$response = curl_exec($ch);
+
+curl_close($ch);
+
+var_dump($response);
+
 
 ```
 
@@ -47,41 +44,33 @@ Podemos consultar los folios de todas las series de la empresa.
 Para probar el código de ejemplo es necesario que reemplaces el texto  **Ingresa API KEY**  por el API KEY de tu cuenta, e **Ingresa SECRET KEY**  por el SECRET KEY correspondiente.
 
 
-#### Respuesta
+#### Respuesta exitosa
 
 ```
 
 {
-    "codes": [
+    "status": "success",
+    "data": [
+    {
+        "SerieID": 1247,
+        "SerieName": "CED",
+        "SerieType": "F"
+        },
         {
-            "code": "{
-                "status": "success",
-                "data": [
-                {
-                    "SerieID": 1247,
-                    "SerieName": "CED",
-                    "SerieType": "F"
-                },
-                {
-                    "SerieID": 1098,
-                    "SerieName": "CONCEPT",
-                    "SerieType": "F"
-                    },
-                    {
-                        "SerieID": 1598,
-                        "SerieName": "DUPLI",
-                        "SerieType": "F"
-                    },
-                    {
-                        "SerieID": 1,
-                        "SerieName": "F",
-                        "SerieType": "F"
-                    },
-                ]
-            }",
-            "language": "json",
-            "name": "respuesta exitosa"
-        }
+            "SerieID": 1098,
+            "SerieName": "CONCEPT",
+            "SerieType": "F"
+        },
+        {
+            "SerieID": 1598,
+            "SerieName": "DUPLI",
+            "SerieType": "F"
+        },
+        {
+            "SerieID": 1,
+            "SerieName": "F",
+            "SerieType": "F"
+        },
     ]
 }
 
