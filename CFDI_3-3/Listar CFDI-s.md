@@ -55,9 +55,9 @@ Podemos consultar los CFDI's filtrando por los siguientes parámetros:
 
 #### Construcción de la URL
 
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v3/cfdi33/list
-**Ejemplo**:  https://facturaonline.com.mx/api/v3/cfdi33/list
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v3/cfdi33/list  
+**Ejemplo**:  https://facturaonline.com.mx/api/v3/cfdi33/list  
 
 
 #### Ejemplo
