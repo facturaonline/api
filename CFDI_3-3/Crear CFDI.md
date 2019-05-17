@@ -28,176 +28,150 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
             <td>TipoCfdi</td>
             <td>string</td>
             <td>Requerido</td>
-            <td></td>
+            <td>Indica la clave del tipo de documento que deseas timbrar.
+            Ver listado de tipos de documentos. https://facturaonline.com.mx/v3.0/docs/cat%C3%A1logos.
+            Ejemplo: "TipoCfdi": "factura".</td>
         </tr>
         <tr>
             <td>Conceptos</td>
             <td>array</td>
             <td>Requerido</td>
-            <td></td>
+            <td>Es un arreglo de objetos, en el que cada objeto corresponde a un concepto con sus atibutos para agregar al CFDI.
+            Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/conceptos.
+            Ejemplo: "Conceptos": [{
+                "ClaveProdServ": "43232408",
+                "NoIdentificacion": "0021",
+                "Cantidad": "1.000000",
+                "ClaveUnidad": "E48",
+                "Unidad": "Unidad de servicio",
+                "Descripcion": "Desarrollo web a la medida",
+                "ValorUnitario": "15000.000000",
+                "Importe": "15000.000000",
+                "Descuento": "0",
+                "Impuestos": {
+                    "Traslados": [{
+                        "Base": "15000.000000",
+                        "Impuesto":  "002",
+                        "TipoFactor": "Tasa",
+                        "TasaOCuota": "0.16",
+                        "Importe": "2400.000000"
+                    }],
+                    "Retenidos": [],
+                    "Locales": []
+                },
+            }]</td>
         </tr>
         <tr>
             <td>UsoCFDI</td>
             <td>string</td>
             <td>Requerido</td>
-            <td></td>
+            <td>Indica la clave del Uso de CFDI, ésta debe ser válida para el SAT.
+            Ver catálogo de claves de uso de cfdi. https://facturaonline.com.mx/docs/uso-de-cfdi.
+            Ejemplo: "UsoCFDI": "G01"</td>
         </tr>
         <tr>
             <td>Serie</td>
             <td>number</td>
             <td>Requerido</td>
-            <td></td>
+            <td>Indica id de la serie con la que deseas timbrar el documento. Ésta debe estar dada de alta en tu panel de Facturaonline.com.mx y coincidir con el tipo de CFDI que deseas timbrar.
+            Para obtenerlo  Inicia sesión  y dirígete al  Menú latera / Configuraciones / Series y folios​ Ejemplo:  "Serie": "1247"</td>
         </tr>
         <tr>
             <td>FormaPago</td>
             <td>string</td>
             <td>Requerido</td>
-            <td></td>
+            <td>Indica la clave de la forma de pago.
+            Ésta puedes consultarla en el catálogo de formas de pago. https://facturaonline.com.mx/docs/forma-de-pago.
+            Ejemplo: "FormaPago": "01"</td>
         </tr>
         <tr>
             <td>MetodoPago</td>
             <td>string</td>
             <td>Requerido</td>
-            <td></td>
+            <td>Indica la clave del método de pago.
+            Ésta puedes consultarla en el catálogo de métodos de pago. https://facturaonline.com.mx/docs/m%C3%A9todos-de-pago.
+            Ejemplo:  "MetodoPago": "PUE"</td>
         </tr>
         <tr>
             <td>CondicionesDePago</td>
             <td>string</td>
             <td>Opcional</td>
-            <td></td>
+            <td>Indica las condiciones de pago del CFDI, éstas deben tener una longitud mínima de 1 y máxima de 1000 caracteres.
+            Ejemplo: "CondicionesDePago": "Pago en 9 meses"</td>
         </tr>
         <tr>
             <td>CfdiRelacionados</td>
             <td>array</td>
             <td>Opcional</td>
-            <td></td>
+            <td>En caso que tu CFDI vaya relacionado con otro(s), envía un arreglo con el/los UUID's con los que está relacionado.
+            Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/cfdis-relacionados.
+            Ejemplo: "CfdiRelacionados": {
+                "TipoRelacion": "01",
+                "UUID": [
+                    "29c98cb2-f72a-4cbe-a297-606da335e187",
+                    "a96f6b9a-70aa-4f2d-bc5e-d54fb7371236"
+                ]
+            }</td>
         </tr>
         <tr>
             <td>Moneda</td>
             <td>string</td>
             <td>Requerido</td>
-            <td></td>
+            <td>Indica la clave de la moneda del CFDI.
+            Ésta puedes consultarla en el catálogo de monedas. https://facturaonline.com.mx/docs/moneda.
+            Ejemplo: "Moneda": "MXN"</td>
         </tr>
         <tr>
             <td>TipoCambio</td>
             <td>string</td>
-            <td>Opcional/Requerido en caso que el atributo *Moneda*  sea diferente de **MXN**</td>
-            <td></td>
+            <td>Opcional/Requerido en caso que el atributo Moneda sea diferente de MXN.</td>
+            <td>Indicar el tipo de cambio vigente al momento de crear el CFDI.
+            Ejemplo: "TipoCambio": "19.85",</td>
         </tr>
         <tr>
             <td>NumOrder</td>
             <td>number</td>
             <td>Opcional</td>
-            <td></td>
+            <td>Indica el número de orden o pedido. Este dato es solo para control interno.
+            Ejemplo: "NumOrder": "85abf36",</td>
         </tr>
         <tr>
             <td>Fecha</td>
             <td>string</td>
             <td>Opcional</td>
-            <td></td>
+            <td>Indica una fecha con formato (Y-m-d\\TH: m :s). Es posible enviar hasta 72 horas de atraso a la fecha actual, sin embargo no están permitidas las fechas futuras.
+            Ejemplo: "Fecha": "2018/12/04",</td>
         </tr>
         <tr>
             <td>Comentarios</td>
             <td>string</td>
             <td>Opcional</td>
-            <td></td>
+            <td>Indica si deseas que aparezcan comentarios en el PDF de tu CFDI.
+            Ejemplo: "Comentarios": "El pedido aún no es entregado",</td>
         </tr>
         <tr>
             <td>Cuenta</td>
             <td>string</td>
             <td>Opcional</td>
-            <td></td>
+            <td>En caso de desearlo, indica  los últimos 4 dígitos de la tarjeta o cuenta bancaria del cliente.
+            Ejemplo: "Cuenta": "0025",</td>
         </tr>
         <tr>
             <td>EnviarCorreo</td>
             <td>bolean</td>
             <td>Opcional</td>
-            <td></td>
+            <td>Indica si deseas que el CFDI se envíe a tu cliente por correo electrónico. Por default esta opción es "true".
+            Ejemplo: "EnviarCorreo": "true",</td>
         </tr>
         <tr>
             <td>LugarExpedicion</td>
             <td>string</td>
             <td>Opcional</td>
-            <td></td>
+            <td>Indica el Código postal del lugar de expedición del CFDI. Éste debe tener* 5 caracteres*.
+            Ejemplo: "LugarExpedicion": "44650"</td>
         </tr>
     </tbody>
 </table>
-```
-
-{
-    "data": {
-        "1-3": "Indica la clave del tipo de documento que deseas timbrar.
-        Ver listado de tipos de documentos. https://facturaonline.com.mx/v3.0/docs/cat%C3%A1logos.
-        **Ejemplo**: "TipoCfdi": "factura",
-        "2-3": "Es un arreglo de objetos, en el que cada objeto corresponde a un concepto con sus atibutos para agregar al CFDI.
-        Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/conceptos.
-        **Ejemplo**: "Conceptos": [{
-            "ClaveProdServ": "43232408",
-            "NoIdentificacion": "0021",
-            "Cantidad": "1.000000",
-            "ClaveUnidad": "E48",
-            "Unidad": "Unidad de servicio",
-            "Descripcion": "Desarrollo web a la medida",
-            "ValorUnitario": "15000.000000",
-            "Importe": "15000.000000",
-            "Descuento": "0",
-            "Impuestos": {
-                "Traslados": [{
-                    "Base": "15000.000000",
-                    "Impuesto":  "002",
-                    "TipoFactor": "Tasa",
-                    "TasaOCuota": "0.16",
-                    "Importe": "2400.000000"
-                }],
-                "Retenidos": [],
-                "Locales": []
-            },
-        }],
-        "3-3": "Indica la clave del Uso de CFDI, ésta debe ser válida para el SAT.
-        Ver catálogo de claves de uso de cfdi. https://facturaonline.com.mx/docs/uso-de-cfdi.
-        **Ejemplo**: "UsoCFDI": "G01",
-        "4-3": "Indica id de la serie con la que deseas timbrar el documento. Ésta debe estar dada de alta en tu panel de Facturaonline.com.mx y coincidir con el tipo de CFDI que deseas timbrar.
-        Para obtenerlo  **Inicia sesión**  y dirígete al  **Menú latera / Configuraciones / Series y folios​** **Ejemplo**:  "Serie": "1247",
-        "5-3": "Indica la clave de la forma de pago.
-        Ésta puedes consultarla en el catálogo de formas de pago. https://facturaonline.com.mx/docs/forma-de-pago.
-        **Ejemplo**: "FormaPago": "01",
-        "6-3": "Indica la clave del método de pago.
-        Ésta puedes consultarla en el catálogo de métodos de pago. https://facturaonline.com.mx/docs/m%C3%A9todos-de-pago.
-        **Ejemplo**:  "MetodoPago": "PUE",
-        "7-3": "Indica las condiciones de pago del CFDI, éstas deben tener una longitud **mínima de 1 y máxima de 1000* caracteres**.
-        **Ejemplo**: "CondicionesDePago": "Pago en 9 meses",
-        "8-3": "En caso que tu CFDI vaya relacionado con otro(s), envía un arreglo con el/los UUID's con los que está relacionado.
-        Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/cfdis-relacionados.
-        **Ejemplo**: "CfdiRelacionados": {
-            "TipoRelacion": "01",
-            "UUID": [
-                "29c98cb2-f72a-4cbe-a297-606da335e187",
-                "a96f6b9a-70aa-4f2d-bc5e-d54fb7371236"
-            ]
-        },
-        "9-3": "Indica la clave de la moneda del CFDI.
-        Ésta puedes consultarla en el catálogo de monedas. https://facturaonline.com.mx/docs/moneda.
-        **Ejemplo:** "Moneda": "MXN",
-        "10-3": "Indicar el tipo de cambio vigente al momento de crear el CFDI.
-        **Ejemplo**: "TipoCambio": "19.85",
-        "11-3": "Indica el número de orden o pedido. Este dato es solo para control interno.
-        **Ejemplo**: "NumOrder": "85abf36",
-        "12-3": "Indica una fecha con formato (Y-m-d\\TH: m :s). Es posible enviar hasta 72 horas de atraso a la fecha actual, sin embargo no están permitidas las fechas futuras.
-        **Ejemplo**: "Fecha": "2018/12/04",
-        "13-3": "Indica si deseas que aparezcan comentarios en el PDF de tu CFDI.
-        **Ejemplo**: "Comentarios": "El pedido aún no es entregado",
-        "14-3": "En caso de desearlo, indica  los últimos 4 dígitos de la tarjeta o cuenta bancaria del cliente.
-        **Ejemplo**: "Cuenta": "0025",
-        "15-3": "Indica si deseas que el CFDI se envíe a tu cliente por correo electrónico. Por default esta opción es *true*.
-        **Ejemplo**: "EnviarCorreo": "true",
-        "16-3": "Indica el Código postal del lugar de expedición del CFDI. Éste debe tener* 5 caracteres*.
-        **Ejemplo**: "LugarExpedicion": "44650"
-    },
-    "cols": 4,
-    "rows": 17
-}
-
-```
 
 
 #### Importante
