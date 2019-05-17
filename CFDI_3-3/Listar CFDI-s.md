@@ -20,50 +20,6 @@ Podemos consultar los CFDI's filtrando por los siguientes parámetros:
 </table>
 
 
-```
-
-{
-    "data": {
-        "h-0": "Parámetro",
-        "h-1": "Tipo",
-        "h-2": "Requerido",
-        "h-3": "Detalles",
-        "0-0": "month",
-        "1-0": "year",
-        "2-0": "rfc",
-        "3-0": "type_document",
-        "4-0": "page",
-        "5-0": "per_page",
-        "0-1": "number",
-        "1-1": "number",
-        "2-1": "string",
-        "3-1": "string",
-        "4-1": "int",
-        "5-1": "int",
-        "0-2": "Opcional",
-        "1-2": "Opcional",
-        "2-2": "Opcional",
-        "3-2": "Opcional",
-        "4-2": "Opcional",
-        "5-2": "Opcional",
-        "0-3": "Induca el número de mes que deseas consultar. Éste debe estar escrito en 2 dígitos.
-        **Ejemplo**: Enero = 01, Diciembre = 12, etc.",
-        "1-3": "Indica el año que deseas consultar. Éste debe estar escrito en 4 dígitos.
-        **Ejemplo**: 2017.",
-        "2-3": "Indica un RFC para traer todos los CFDI's timbrados al mismo.
-        **Ejemplo**: XAXX010101000.",
-        "3-3": "Indica un tipo de CFDI para  listar solo los CFDI's de ese tipo. Para ello enviar la clave indicada en el catálogo de **Tipos de CFDI**.
-        **Ejemplo**: factura Consulta el catálogo de tipos de CFDIs.",
-        "4-3": "Indica número de página a consultar, por default posiciona en la página 1.",
-        "5-3": "Indica el limite de resultados para mostrar, por default retorna 100 registros."
-      },
-      "cols": 4,
-      "rows": 6
-}
-
-```
-
-
 #### Construcción de la URL
 
 **Host**: https://facturaonline.com.mx
