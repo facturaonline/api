@@ -1,33 +1,41 @@
----
-title: "Aduana"
-excerpt: "Consulta el catálogo de Aduanas"
----
-[block:html]
-{
-  "html": "<div>\n  <h1>Construcción de la URL</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"
-}
-[/block]
-**Host**: ** https://facturaonline.com.mx** (producción)     /    **http://facturaonline.com.mx** (sandbox)
+# Aduana
+
+Consulta el catálogo de Aduanas.
+
+
+#### Construcción de la URL
+
+**Host**: https://facturaonline.com.mx
 **Endpoint**:  /api/v3/catalogo/Aduana
-
 **URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/Aduana
-[block:html]
-{
-  "html": "<div>\n  <h1>Ejemplo</h1>\n</div>\n\n<style>\n  h1{\n  \tcolor:#173457;\n    font-size: 18px;\n    font-weight: 500;\n  }\n  \n</style>"
-}
-[/block]
 
-[block:code]
-{
-  "codes": [
-    {
-      "code": "<?php\n$ch = curl_init();\n\ncurl_setopt($ch, CURLOPT_URL, \"https://facturaonline.com.mx/api/v3/catalogo/Aduana\");\ncurl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);\ncurl_setopt($ch, CURLOPT_HEADER, FALSE);\n\ncurl_setopt($ch, CURLOPT_HTTPHEADER, array(\n   \"Content-Type: application/json\",\n    \"F-PLUGIN: \" . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',\n    \"F-Api-Key: \". 'Ingresa API KEY',\n    \"F-Secret-Key: \" . 'Ingresa SECRET KEY'\n));\n\n$response = curl_exec($ch);\ncurl_close($ch);\n\nvar_dump($response);\n",
-      "language": "php",
-      "name": "consulta_aduana.php"
-    }
-  ]
-}
-[/block]
+
+#### Ejemplo
+
+```
+
+<?php
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, "https://facturaonline.com.mx/api/v3/catalogo/Aduana");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+   "Content-Type: application/json",
+    "F-PLUGIN: " . '9d4095c8f7ed5785cb14c0e3b033eeb8252416ed',
+    "F-Api-Key: ". 'Ingresa API KEY',
+    "F-Secret-Key: " . 'Ingresa SECRET KEY'
+));
+
+$response = curl_exec($ch);
+
+curl_close($ch);
+
+var_dump($response);
+
+
+```
 
 [block:callout]
 {
