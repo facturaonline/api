@@ -5,9 +5,9 @@ Consulta el catálogo de Aduanas.
 
 #### Construcción de la URL
 
-**Host**: https://facturaonline.com.mx
-**Endpoint**:  /api/v3/catalogo/Aduana
-**URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/Aduana
+**Host**: https://facturaonline.com.mx  
+**Endpoint**:  /api/v3/catalogo/Aduana  
+**URL completa**:  https://facturaonline.com.mx/api/v3/catalogo/Aduana  
 
 
 #### Ejemplo
