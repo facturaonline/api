@@ -3,32 +3,136 @@
 A continuación se explica como crear un CFDI, con un ejemplo y  muestra de posibles respuestas obtenidas.
 Podemos crear un CFDI haciendo uso de los siguientes parámetros:
 
+<table>
+    <thead>
+        <tr>
+            <th>Parámetro</th>
+            <th>Tipo</th>
+            <th>Requerido</th>
+            <th>Detalles</th>
+        </tr>
+    <thead>
+    <tbody>
+        <tr>
+            <td>Receptor</td>
+            <td>array</td>
+            <td>Requerido</td>
+            <td>Indica el UID del receptor/cliente previamente creado en facturaonline.com.mx.
+            Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/receptor.
+            **Ejemplo**:
+            ```
+            "Receptor": {
+                "ResidenciaFiscal": "",
+                "UID": "55c0fdc67593d"
+            }
+            ```
+            </td>
+        </tr>
+        <tr>
+            <td>TipoCfdi</td>
+            <td>string</td>
+            <td>Requerido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Conceptos</td>
+            <td>array</td>
+            <td>Requerido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>UsoCFDI</td>
+            <td>string</td>
+            <td>Requerido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Serie</td>
+            <td>number</td>
+            <td>Requerido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>FormaPago</td>
+            <td>string</td>
+            <td>Requerido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>MetodoPago</td>
+            <td>string</td>
+            <td>Requerido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CondicionesDePago</td>
+            <td>string</td>
+            <td>Opcional</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CfdiRelacionados</td>
+            <td>array</td>
+            <td>Opcional</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Moneda</td>
+            <td>string</td>
+            <td>Requerido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TipoCambio</td>
+            <td>string</td>
+            <td>Opcional/Requerido en caso que el atributo *Moneda*  sea diferente de **MXN**</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>NumOrder</td>
+            <td>number</td>
+            <td>Opcional</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fecha</td>
+            <td>string</td>
+            <td>Opcional</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Comentarios</td>
+            <td>string</td>
+            <td>Opcional</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cuenta</td>
+            <td>string</td>
+            <td>Opcional</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>EnviarCorreo</td>
+            <td>bolean</td>
+            <td>Opcional</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>LugarExpedicion</td>
+            <td>string</td>
+            <td>Opcional</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 ```
 
 {
     "data": {
-        "h-0": "Parámetro",
-        "h-1": "Tipo",
-        "h-2": "Requerido",
-        "h-3": "Detalles",
-        "0-0": "Receptor",
-        "0-1": "array",
-        "0-2": "Requerido",
-        "0-3": "Indica el UID del receptor/cliente previamente creado en facturaonline.com.mx.
-        Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/receptor.
-        **Ejemplo**:   "Receptor": {
-            "ResidenciaFiscal": "",
-            "UID": "55c0fdc67593d"
-        }",
-        "1-0": "TipoCfdi",
-        "1-1": "string",
-        "1-2": "Requerido",
         "1-3": "Indica la clave del tipo de documento que deseas timbrar.
         Ver listado de tipos de documentos. https://facturaonline.com.mx/v3.0/docs/cat%C3%A1logos.
         **Ejemplo**: "TipoCfdi": "factura",
-        "2-0": "Conceptos",
-        "2-1": "array",
-        "2-2": "Requerido",
         "2-3": "Es un arreglo de objetos, en el que cada objeto corresponde a un concepto con sus atibutos para agregar al CFDI.
         Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/conceptos.
         **Ejemplo**: "Conceptos": [{
@@ -53,37 +157,19 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
                 "Locales": []
             },
         }],
-        "3-0": "UsoCFDI",
-        "3-1": "string",
-        "3-2": "Requerido",
         "3-3": "Indica la clave del Uso de CFDI, ésta debe ser válida para el SAT.
         Ver catálogo de claves de uso de cfdi. https://facturaonline.com.mx/docs/uso-de-cfdi.
         **Ejemplo**: "UsoCFDI": "G01",
-        "4-0": "Serie",
-        "4-1": "number",
-        "4-2": "Requerido",
         "4-3": "Indica id de la serie con la que deseas timbrar el documento. Ésta debe estar dada de alta en tu panel de Facturaonline.com.mx y coincidir con el tipo de CFDI que deseas timbrar.
         Para obtenerlo  **Inicia sesión**  y dirígete al  **Menú latera / Configuraciones / Series y folios​** **Ejemplo**:  "Serie": "1247",
-        "5-0": "FormaPago",
-        "5-1": "string",
-        "5-2": "Requerido",
         "5-3": "Indica la clave de la forma de pago.
         Ésta puedes consultarla en el catálogo de formas de pago. https://facturaonline.com.mx/docs/forma-de-pago.
         **Ejemplo**: "FormaPago": "01",
-        "6-0": "MetodoPago",
-        "6-1": "string",
-        "6-2": "Requerido",
         "6-3": "Indica la clave del método de pago.
         Ésta puedes consultarla en el catálogo de métodos de pago. https://facturaonline.com.mx/docs/m%C3%A9todos-de-pago.
         **Ejemplo**:  "MetodoPago": "PUE",
-        "7-0": "CondicionesDePago",
-        "7-1": "string",
-        "7-2": "Opcional",
         "7-3": "Indica las condiciones de pago del CFDI, éstas deben tener una longitud **mínima de 1 y máxima de 1000* caracteres**.
         **Ejemplo**: "CondicionesDePago": "Pago en 9 meses",
-        "8-0": "CfdiRelacionados",
-        "8-1": "array",
-        "8-2": "Opcional",
         "8-3": "En caso que tu CFDI vaya relacionado con otro(s), envía un arreglo con el/los UUID's con los que está relacionado.
         Ver listado de atributos posibles para este nodo. https://facturaonline.com.mx/docs/cfdis-relacionados.
         **Ejemplo**: "CfdiRelacionados": {
@@ -93,45 +179,21 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
                 "a96f6b9a-70aa-4f2d-bc5e-d54fb7371236"
             ]
         },
-        "9-0": "Moneda",
-        "9-1": "string",
-        "9-2": "Requerido",
         "9-3": "Indica la clave de la moneda del CFDI.
         Ésta puedes consultarla en el catálogo de monedas. https://facturaonline.com.mx/docs/moneda.
         **Ejemplo:** "Moneda": "MXN",
-        "10-0": "TipoCambio",
-        "10-1": "string",
-        "10-2": "Opcional/Requerido en caso que el atributo *Moneda*  sea diferente de **MXN**",
         "10-3": "Indicar el tipo de cambio vigente al momento de crear el CFDI.
         **Ejemplo**: "TipoCambio": "19.85",
-        "11-0": "NumOrder",
-        "11-1": "number",
-        "11-2": "Opcional",
         "11-3": "Indica el número de orden o pedido. Este dato es solo para control interno.
         **Ejemplo**: "NumOrder": "85abf36",
-        "12-0": "Fecha",
-        "12-1": "string",
-        "12-2": "Opcional",
         "12-3": "Indica una fecha con formato (Y-m-d\\TH: m :s). Es posible enviar hasta 72 horas de atraso a la fecha actual, sin embargo no están permitidas las fechas futuras.
         **Ejemplo**: "Fecha": "2018/12/04",
-        "13-0": "Comentarios",
-        "13-1": "string",
-        "13-2": "Opcional",
         "13-3": "Indica si deseas que aparezcan comentarios en el PDF de tu CFDI.
         **Ejemplo**: "Comentarios": "El pedido aún no es entregado",
-        "14-0": "Cuenta",
-        "14-1": "string",
-        "14-2": "Opcional",
         "14-3": "En caso de desearlo, indica  los últimos 4 dígitos de la tarjeta o cuenta bancaria del cliente.
         **Ejemplo**: "Cuenta": "0025",
-        "15-0": "EnviarCorreo",
-        "15-1": "bolean",
-        "15-2": "Opcional",
         "15-3": "Indica si deseas que el CFDI se envíe a tu cliente por correo electrónico. Por default esta opción es *true*.
         **Ejemplo**: "EnviarCorreo": "true",
-        "16-0": "LugarExpedicion",
-        "16-1": "string",
-        "16-2": "Opcional",
         "16-3": "Indica el Código postal del lugar de expedición del CFDI. Éste debe tener* 5 caracteres*.
         **Ejemplo**: "LugarExpedicion": "44650"
     },
