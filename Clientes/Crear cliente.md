@@ -108,7 +108,7 @@ Podemos crear un nuevo cliente haciendo uso de los siguientes parámetros:
             <td>string</td>
             <td>Opcional</td>
             <td>Indica la clave del país.
-            [Consulta el catálogo correspondiente a paises.](https://developers.facturaonline.com.mx/docs/pa%C3%ADs)</td>
+            [Consulta el catálogo correspondiente a paises.](https://facturaonline.com.mx/docs/pa%C3%ADs)</td>
         </tr>
         <tr>
             <td>delegacion</td>
@@ -127,7 +127,7 @@ Podemos crear un nuevo cliente haciendo uso de los siguientes parámetros:
             <td>string</td>
             <td>Requerido</td>
             <td>Indica la clave que corresponda al uso que le dará al comprobante fiscal el receptor.
-            [Consulta el catálogo de claves de Uso de CFDI.](https://developers.facturaonline.com.mx/docs/uso-de-cfdi</td>
+            [Consulta el catálogo de claves de Uso de CFDI.](https://facturaonline.com.mx/docs/uso-de-cfdi</td>
         </tr>
     </tbody>
 </table>
