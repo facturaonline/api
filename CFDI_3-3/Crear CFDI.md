@@ -140,7 +140,7 @@ Podemos crear un CFDI haciendo uso de los siguientes parámetros:
             <td>string</td>
             <td>Opcional</td>
             <td>Indica una fecha con formato (Y-m-d\\TH: m :s). Es posible enviar hasta 72 horas de atraso a la fecha actual, sin embargo no están permitidas las fechas futuras.
-            Ejemplo: "Fecha": "2018/12/04",</td>
+            Ejemplo: "Fecha": "2020-03-20\T12:53:23",</td>
         </tr>
         <tr>
             <td>Comentarios</td>
