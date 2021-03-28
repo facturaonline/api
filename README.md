@@ -3,7 +3,6 @@
 La documentación de la API de Facturaonline.com.mx ofrece una descripción de los métodos y endpoints disponibles, ejemplos de las posibles respuestas obtenidas e información general para facilitar el uso de nuestra API.
 
 #### Documentación
-https://github.com/DoWebMx/CFDI-api.git
 [Información general](https://github.com/DoWebMx/CFDI-api/blob/master/Documentacion/Informacion_general.md)  
 [Enviroment](https://github.com/DoWebMx/CFDI-api/blob/master/Documentacion/Enviroment.md)  
 [Primeros pasos](https://github.com/DoWebMx/CFDI-api/blob/master/Documentacion/Primeros%20pasos.md)  
