@@ -27,19 +27,7 @@ Podemos descargar un CFDI haciendo uso del siguiente parámetro:
             <td>Requerido"</td>
             <td>Indica el UID o UUID del CFDI que deseas descargar.
             Ejemplo: "n55c0fdc67593d</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        </tr>        
     </tbody>
 </table>
 
