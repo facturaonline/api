@@ -23,4 +23,4 @@ Por ejemplo, para traer listado de facturas en el entorno de producción la url 
 
 #### Actualizaciones
 
-Las **versiones 1 (v1) y 2 (v2)** de CFDI ya no se encuentran disponibles, actualmente la versión para timbrar es la **versión 3"**.
+Las **versiones 1 (v1) y 2 (v2)** de CFDI ya no se encuentran disponibles, actualmente la versión para timbrar es la **versión 3**.
